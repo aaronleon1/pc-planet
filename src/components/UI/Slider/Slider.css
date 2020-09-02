@@ -1,0 +1,14 @@
+.slider {
+    height: 40%;
+    width: 55%;
+    margin: 0 auto auto auto;
+    
+}
+
+@media (max-width: 960px) {
+    .slider{
+        height: 60%;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,103 @@
+.ram-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: block;
+}
+
+.ram-head{
+    text-align: center;
+    background: #ccc;
+    border-bottom: 5px solid black;
+    padding: 0;
+    margin: 0;
+}
+
+.ram-head h1{
+    margin: 0;
+    padding: 1rem;
+}
+
+.ram-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    width: 60%;
+
+}
+
+.ram-cards{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 275px;
+    height: 375px;
+    color: #292f33;
+    box-shadow: 0px 10px 5px #aaaaaa;
+    border: 2px solid #ccc;
+    border-bottom: 5px solid rgba(73, 63, 252, 1);
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+
+.ram-image {
+    height: 60%;
+    width: 100%;
+    padding: 4px 0;
+    border-bottom: solid 5px black;
+}
+
+.ram-name {
+    margin: 5px 0 0 10px;
+    font-size: 20px;
+}
+.ram-price, .ram-price p{
+    font-size:16px;
+    font-weight: 300;
+    margin: 5px 0 0 10px;
+}
+
+.view-btn {
+    width: 50%;
+    height: 40px;
+    margin: auto;
+    bottom: 0;
+    padding-bottom: 5px;
+    outline: none;
+    border-radius: 5px;
+    background: #4ad9e4;
+    color: #292f33;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.view-btn:hover {
+    transform: scale(1.04);
+}
+
+@media screen and (max-width: 960px) {
+    .ram-card-wrapper{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .ram-cards{
+        width: 90%;
+        margin: 30px auto auto auto;
+        height: 500px;
+    }
+    .ram-image{
+        height: 60%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+}

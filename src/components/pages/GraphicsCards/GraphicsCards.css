@@ -1,0 +1,103 @@
+.graphics-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: block;
+}
+
+.graphics-head{
+    text-align: center;
+    background: #ccc;
+    border-bottom: 5px solid black;
+    padding: 0;
+    margin: 0;
+}
+
+.graphics-head h1{
+    margin: 0;
+    padding: 1rem;
+}
+
+.gpu-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    width: 60%;
+
+}
+
+.graphics-cards{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 275px;
+    height: 375px;
+    color: #292f33;
+    box-shadow: 0px 10px 5px #aaaaaa;
+    border: 2px solid #ccc;
+    border-bottom: 5px solid rgba(73, 63, 252, 1);
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+
+.gpu-image {
+    height: 60%;
+    width: 100%;
+    padding: 4px 0;
+    border-bottom: solid 5px black;
+}
+
+.gpu-name {
+    margin: 5px 0 0 10px;
+    font-size: 20px;
+}
+.gpu-price, .gpu-price p{
+    font-size:16px;
+    font-weight: 300;
+    margin: 5px 0 0 10px;
+}
+
+.view-btn {
+    width: 50%;
+    height: 40px;
+    margin: auto;
+    bottom: 0;
+    padding-bottom: 5px;
+    outline: none;
+    border-radius: 5px;
+    background: #4ad9e4;
+    color: #292f33;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.view-btn:hover {
+    transform: scale(1.04);
+}
+
+@media screen and (max-width: 960px) {
+    .gpu-card-wrapper{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .graphics-cards{
+        width: 90%;
+        margin: 30px auto auto auto;
+        height: 500px;
+    }
+    .gpu-image{
+        height: 60%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+}
