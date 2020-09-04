@@ -13,6 +13,9 @@ import Dropdown from './components/Navigation/Navbar/Dropdown/Dropdown'
 import Processors from './components/pages/Processors/Processors';
 import Ram from './components/pages/RAM/Ram';
 import ProductDetails from './components/ProductDetails/ProductDetails'
+import GPUCard from './components/pages/GraphicsCards/GPUCard';
+
+
 
 class App extends Component {
   render() {
@@ -27,7 +30,10 @@ class App extends Component {
               <Route path='/graphics-cards' exact component={GraphicsCards} />
               <Route path='/processors' exact component={Processors} />
               <Route path='/ram' exact component={Ram} />
-              <Route path='/:productId' exact component={ProductDetails} />
+              <Route path='/:id' 
+                exact 
+                render={props => <ProductDetails {...props}/>} 
+              />
             </Switch>
             <Footer />
             <Disclaimer />
