@@ -1,24 +1,24 @@
 import React from 'react'
-import Products from './GPU'
+import {graphicsProducts} from './GPU'
 import '../../Products.css'
+import GPUCard from '../../../../pages/GraphicsCards/GPUCard';
+import {ProductConsumer} from '../../../../context'
 
-const GPUCard = (props) => {
+const GraphicsCardsHome = (props) => {
     return (
         <div className='ProductCards'>
-        {Products.map((prod, index) => {
-        return (
-            <div className='product-card-wrapper'>
-                <div className='product-card' key={index}>
-                    <img src={require(`../../../../../../public/assets/${prod.productImage}.jpg`)} alt={prod.productName} className='product-image'/>
-                    <h2 className='product-name'>{prod.productName}</h2>
-                    <p className='product-price'>{prod.productPrice}</p>
-                    <button className='cart-btn'><i class="fas fa-cart-plus"></i> Add To Cart</button>
-                </div>
-            </div>
-        )  
-        })}
+
+            <ProductConsumer>
+                    {value =>{
+                       return value.products.map( gpu => {
+                           return <GPUCard key={gpu.id}
+                            gpu={gpu}  
+                            />
+                       })
+                    }}
+            </ProductConsumer>
     </div>
     )
 }
 
-export default GPUCard
+export default GraphicsCardsHome

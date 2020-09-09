@@ -23,6 +23,7 @@ class HeroSlider extends Component {
         const settings = {
             dots: true,
             fade: true,
+            autoplay: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,

@@ -1,21 +1,34 @@
-import React from 'react'
+import React, {Component} from 'react'
 import GraphicsCards from './GraphicsCards'
 import ProductDetails from '../../ProductDetails/ProductDetails'
+import {ProductConsumer} from '../../context'
 import {Link} from 'react-router-dom'
 
 
-const GPUCard = (props) => {
 
-    return(
-        <div className='card-wrapper'>
-            <div className='graphics-cards' onClick={props.click}>
-                <img src={props.image} alt={props.name} className='gpu-image'/>
-                <h2 className='gpu-name'>{props.name}</h2>
-                <p className='gpu-price'>{props.price}</p>
-                <button className='view-btn'>View Item</button>
+
+class GPUCard extends Component {
+    render() {
+        const {id, productName, productImage, productPrice} = this.props.gpu
+
+        return(
+            <div className='card-wrapper'>
+                <ProductConsumer>
+                {value => (
+                <div className='graphics-cards' onClick={() => value.handleDetail(id)}>
+                        <Link to={'/graphics-cards/' + id} >
+                            <img src={productImage} alt={productName} className='gpu-image'/>
+                        </Link>
+                        <h2 className='gpu-name'>{productName}</h2>
+                        <p className='gpu-price'>{productPrice}</p>
+                        <button className='view-btn'>View Item</button>
+                    </div>
+                )}
+                </ProductConsumer>
             </div>
-    </div>
-    )
+        )
+    }
+    
     
 }
 

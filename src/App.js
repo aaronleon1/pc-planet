@@ -20,7 +20,7 @@ import GPUCard from './components/pages/GraphicsCards/GPUCard';
 class App extends Component {
   render() {
     return (
-          <Router>
+          <>
             <Navbar />
             <Switch>
               <Route path='/' exact component={HomePage} />
@@ -30,14 +30,14 @@ class App extends Component {
               <Route path='/graphics-cards' exact component={GraphicsCards} />
               <Route path='/processors' exact component={Processors} />
               <Route path='/ram' exact component={Ram} />
-              <Route path='/:id' 
-                exact 
-                render={props => <ProductDetails {...props}/>} 
-              />
+              <Route path='/graphics-cards/:id' render={(props) => {
+                        return (<ProductDetails {...props}/>)
+                    }}/>
             </Switch>
             <Footer />
             <Disclaimer />
-          </Router>
+          </>
+
           
     )
   }
