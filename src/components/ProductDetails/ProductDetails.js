@@ -15,7 +15,7 @@ class ProductDetails extends Component {
                    const {id, productName, productImage, productPrice, details} = value.detailProduct
                    return (
                     <div className='detail-wrapper'>
-                    <div className='detail-header'>{productName}</div>
+                    
                     <div className='product-detail-wrapper'>
                         <div className='prod-image'>
                         <img src={productImage}  alt={productName}/>
