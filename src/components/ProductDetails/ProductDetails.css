@@ -1,4 +1,104 @@
-.work {
+.detail-wrapper {
     height: 100vh;
     width: 100%;
+}
+.detail-header {
+    width: 100%;
+    height: 80px;
+    background:#3acbf7;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+
+}
+
+.product-detail-wrapper {
+    min-width: 100%;
+    display: block;
+}
+
+.prod-image {
+    display: block;
+    float: left;
+    top: 0;
+    left: 0;
+    margin: 1rem 2rem 1rem 15%;
+    height: 550px;
+    width: 800px;
+    
+}
+
+.prod-image img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.prod-details {
+    display: block;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 475px;
+    margin: 1rem 25% auto 2rem;
+    text-align: center;
+    background-color: white;
+    border: 2px solid gray;
+    border-bottom: 5px solid #3acbf7;
+    padding: 0
+}
+.prod-details p{
+    padding: 1rem 0;
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family:'Roboto', sans-serif;
+}
+.back-btn{
+    height: 50px;
+    width: 95%;
+    background-color:#f89858;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #eed202;
+    color: black;
+}
+
+.add-to-cart{
+    height: 50px;
+    width: 95%;
+    background-color: #6668f4;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.add-to-cart:hover{
+    background-color: #4BB543;
+    transform: scale(1.05)
+}
+
+.back-btn, .add-to-cart{
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.prod-specs {  
+    display: block;
+    clear: left;
+    margin: 2rem 0;
+    text-align: left;
+    padding: 0.2rem 0 0 15%;
+    white-space: pre-wrap;
+    border-top: 5px solid #f89858;
 }

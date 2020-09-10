@@ -21,10 +21,13 @@ class ProductDetails extends Component {
                         <img src={productImage}  alt={productName}/>
                         </div>
                         <div className='prod-details'>
-                            {productName}
-                            {productPrice}
+                            <p>{productName}</p>
+                            <p>{productPrice}</p>
+                            <button className='back-btn'><i class="fas fa-arrow-left" /> Back to Products</button>
+                            <button className='add-to-cart'><i class="fas fa-cart-plus" /> Add to Cart</button>
                         </div>
                         <div className='prod-specs'>
+                            <h3>Product Specifications</h3>
                             {details}
                         </div>
                     </div>

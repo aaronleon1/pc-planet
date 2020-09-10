@@ -5,7 +5,8 @@ const graphicsProducts = [
         productName: 'AMD Radeon VII',
         productImage: '/assets/amdVII.jpg',
         productPrice: '$549.99',
-        url: '/amd-radeon-vii'
+        details: 'Chipset: AMD Radeon VII \n •16GB HBM2 memory \n •Boost clock - 1750 MHz // Peak clock - 1801 MHz \n •Triple fan cooling \n •Stream processors - 3840 \n •Microsoft Windows 10 support'
+        
     },
     {
         id: 2,
