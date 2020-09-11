@@ -16,6 +16,6 @@ body, html {
 }
 
 
-.products-wrapper, .ram-wrapper, .graphics-wrapper, .processors-wrapper{
-  min-height: 100vh;
+.products-wrapper, .ram-wrapper, .graphics-wrapper, .processors-wrapper, .detail-wrapper{
+  min-height: 90vh;
 }

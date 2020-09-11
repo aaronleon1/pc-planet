@@ -5,6 +5,11 @@ const footer = () => {
     return (
         <div className='footer-wrapper'>
             <div className='footer'>
+                <div className='newsletter'>
+                    <p>Subscribe to our Newsletter for exclusive deals!</p>
+                    <input type='text' placeholder='E-mail Address' />
+                    <button className='newsletter-btn' type='submit'>Submit</button>
+                </div>
                 <ul className='footer-list contact-footer'>
                     <h3>Contact Us</h3>
                     <li>
