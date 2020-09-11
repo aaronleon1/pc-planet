@@ -98,7 +98,7 @@
     clear: left;
     margin: 2rem 0;
     text-align: left;
-    padding: 0.2rem 0 0 25%;
+    padding: 0.2rem 25% 0 25%;
     white-space: pre-wrap;
     border-top: 5px solid #f89858;
 }
