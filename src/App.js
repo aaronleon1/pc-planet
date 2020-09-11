@@ -30,9 +30,10 @@ class App extends Component {
               <Route path='/graphics-cards' exact component={GraphicsCards} />
               <Route path='/processors' exact component={Processors} />
               <Route path='/ram' exact component={Ram} />
-              <Route path='/graphics-cards/:id' render={(props) => {
+              <Route path='/:id' render={(props) => {
                         return (<ProductDetails {...props}/>)
                     }}/>
+              
             </Switch>
             <Footer />
             <Disclaimer />

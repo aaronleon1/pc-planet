@@ -44,13 +44,16 @@
 }
 
 
-a {
+.graphics-cards a{
     margin: 0;
     padding: 0;
-}
-.gpu-image {
     height: 60%;
     width: 100%;
+}
+.gpu-image {
+    height: 100%;
+    width: 100%;
+    margin: 0;
     padding: 4px 0;
     border-bottom: solid 5px black;
 }
@@ -60,9 +63,9 @@ a {
     font-size: 20px;
 }
 .gpu-price, .gpu-price p{
-    font-size:16px;
-    font-weight: 300;
-    margin: 5px 0 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 16px 0;
 }
 
 .view-btn {
@@ -97,10 +100,14 @@ a {
         height: 500px;
     }
     .gpu-image{
-        height: 60%;
+        height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+    .gpu-price{
+        margin: 1rem 0;
+        
     }
 
 }

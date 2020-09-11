@@ -18,7 +18,8 @@
 .newsletter {
     margin: 30px 2rem;
     padding: 1rem;
-    font-size: 18px;
+    font-size: 1.7rem;
+    font-weight: 500;
 }
 
 .newsletter input{
@@ -32,6 +33,7 @@
     padding: 16px;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 

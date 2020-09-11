@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom'
 
 class GPUCard extends Component {
     render() {
-        const {id, productName, productImage, productPrice} = this.props.gpu
+        const {id, productName, productImage, productPrice, inCart} = this.props.gpu
 
         return(
             <div className='card-wrapper'>
@@ -21,7 +21,7 @@ class GPUCard extends Component {
                         </Link>
                         <h2 className='gpu-name'>{productName}</h2>
                         <p className='gpu-price'>{productPrice}</p>
-                        <button className='view-btn'>View Item</button>
+                        <button className='view-btn' disabled={inCart ? true : false}onClick={() => value.addToCart(id)}>View Item</button>
                     </div>
                 )}
                 </ProductConsumer>
