@@ -15,6 +15,7 @@ import Ram from './components/pages/RAM/Ram';
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import GPUCard from './components/pages/GraphicsCards/GPUCard';
 import Modal from './components/UI/Modal/Modal'
+import Cart from './components/pages/Cart/Cart'
 
 
 
@@ -31,9 +32,11 @@ class App extends Component {
               <Route path='/graphics-cards' exact component={GraphicsCards} />
               <Route path='/processors' exact component={Processors} />
               <Route path='/ram' exact component={Ram} />
+              <Route path='/cart' exact component={Cart} />
               <Route path='/:id' render={(props) => {
                         return (<ProductDetails {...props}/>)
                     }}/>
+              
               
             </Switch>
             <Modal />

@@ -60,6 +60,11 @@ const Navbar = () => {
                         Sign Up
                     </Link>
                 </li>
+                <li className='nav-item'>
+                    <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
+                        <i className='fas fa-cart-plus' />
+                    </Link>
+                </li>
             </ul>
             <Button/>
         </nav>
