@@ -102,3 +102,28 @@
     white-space: pre-wrap;
     border-top: 2px solid #f89858;
 }
+
+
+@media (max-width: 960px) {
+    .product-detail-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        margin-bottom: 1rem;
+    }
+    .detail-wrapper{
+        height: 100%;
+    }
+
+    .prod-details, .prod-image, .prod-specs{
+        float: none;
+        clear: none;
+        width: 95%;
+        height: auto;
+        margin: 1rem;
+
+    }
+
+
+}

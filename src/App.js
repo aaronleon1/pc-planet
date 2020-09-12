@@ -14,6 +14,7 @@ import Processors from './components/pages/Processors/Processors';
 import Ram from './components/pages/RAM/Ram';
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import GPUCard from './components/pages/GraphicsCards/GPUCard';
+import Modal from './components/UI/Modal/Modal'
 
 
 
@@ -35,6 +36,7 @@ class App extends Component {
                     }}/>
               
             </Switch>
+            <Modal />
             <Footer />
             <Disclaimer />
           </>

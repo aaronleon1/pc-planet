@@ -14,7 +14,7 @@ class ProductDetails extends Component {
         return (
             <ProductConsumer>
                 {(value) => {
-                    const { id, productName, productImage, productPrice, details } = value.detailProduct
+                    const { id, productName, productImage, productPrice, details, inCart } = value.detailProduct
                     return (
                         <div className='detail-wrapper'>
 
@@ -25,8 +25,13 @@ class ProductDetails extends Component {
                                 <div className='prod-details'>
                                     <p>{productName}</p>
                                     <p>{productPrice}</p>
-                                    <button className='back-btn'><i class="fas fa-arrow-left" /> Back to Products</button>
-                                    <button className='add-to-cart'><i class="fas fa-cart-plus" /> Add to Cart</button>
+                                    <button className='back-btn'><i class="fas fa-arrow-left" /> Back  to Products</button>
+                                    <button className='add-to-cart' 
+                                        disabled={inCart ? true : false} 
+                                            onClick={() =>{
+                                                value.addToCart(id)
+                                                value.openModal(id)
+                                    }}><i class="fas fa-cart-plus" />{inCart ? 'inCart' : 'add to cart'}</button>
                                 </div>
                                 <div className='prod-specs'>
                                     <Tabs >

@@ -21,7 +21,10 @@ class GPUCard extends Component {
                         </Link>
                         <h2 className='gpu-name'>{productName}</h2>
                         <p className='gpu-price'>{productPrice}</p>
-                        <button className='view-btn' disabled={inCart ? true : false}onClick={() => value.addToCart(id)}>View Item</button>
+                        <button className='view-btn' disabled={inCart ? true : false}
+                        onClick={() => {
+                        value.addToCart(id) 
+                        value.openModal(id)}}>{inCart ? 'inCart' : 'add to cart'}</button>
                     </div>
                 )}
                 </ProductConsumer>
