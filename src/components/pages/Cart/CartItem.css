@@ -1,3 +1,16 @@
+.item-row{
+    display: flex;
+    margin: 1rem auto;
+    background-color: blanchedalmond;
+    width: 80%;
+    border-radius: 16px;
+}
+
+.item-image, .item-name, .item-price{
+    margin: 0 1rem;
+}
+
+
 .decrement-btn, .increment-btn{
     background: transparent;
     text-transform: capitalize;
@@ -6,6 +19,9 @@
     border: 0.1rem solid #292f33;
     padding: 8px 10px;
     cursor: pointer
+}
+.decrement-btn, .increment-btn, .active-count{
+    margin: 0.5rem;
 }
 
 .decrement-btn:hover{
@@ -16,4 +32,10 @@
 .increment-btn:hover{
     font-size: 1.2rem;
     background: #4BB543;
+}
+
+
+.item-remove{
+    color: black;
+    font-size: 1.8rem;
 }

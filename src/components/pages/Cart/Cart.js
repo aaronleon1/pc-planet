@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ProductConsumer } from '../../context';
+import './Cart.css'
 import CartList from './CartList'
 
 class Cart extends Component {
@@ -12,7 +13,7 @@ class Cart extends Component {
                         if(cart.length>0) {
                             return(
                                 <>
-                                <h1>Your Cart</h1>
+                                <h1 className='cart-heading'>Your Cart</h1>
                                 <CartList value={value} />
                                 </> 
                             )

@@ -7,12 +7,12 @@ function CartItem({item, value}){
     return(
         <div className='item-row'>
             <div className='item-image'>
-                <img src={productImage} style={{width: '5rem', height: '5rem'}} alt={productName} />
+                <img src={productImage} style={{width: '8rem', height: '8rem', padding: '0.5rem 0'}} alt={productName} />
             </div>
             <div className='item-name'>
                 <h3>Product: {productName}</h3>
             </div>
-            <div className='item-name'>
+            <div className='item-price'>
                 <h3>Price: {productPrice}</h3>
             </div>
             <div className='cart-btn-container'>
