@@ -1,0 +1,19 @@
+.decrement-btn, .increment-btn{
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    color: #292f33;
+    border: 0.1rem solid #292f33;
+    padding: 8px 10px;
+    cursor: pointer
+}
+
+.decrement-btn:hover{
+    font-size: 1.2rem;
+    background: #eed202;
+}
+
+.increment-btn:hover{
+    font-size: 1.2rem;
+    background: #4BB543;
+}
