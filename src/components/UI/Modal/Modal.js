@@ -21,7 +21,7 @@ class Modal extends Component {
                                     <img src={productImage} className='modal-image' alt={productName} />
                                     <h5>{productName}</h5>
                                     <h5>Price: ${productPrice}</h5>
-                                    <Link to='/products'>
+                                    <Link to='/'>
                                         <button className='modal-continue' onClick={() => closeModal()}>
                                             Keep Shopping
                                         </button>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ProductConsumer } from '../../context';
 import './Cart.css'
 import CartList from './CartList'
+import CartTotals from './CartTotals'
 
 class Cart extends Component {
     render(){
@@ -15,6 +16,7 @@ class Cart extends Component {
                                 <>
                                 <h1 className='cart-heading'>Your Cart</h1>
                                 <CartList value={value} />
+                                <CartTotals value={value} />
                                 </> 
                             )
                         }

@@ -16,7 +16,7 @@ class GPUCard extends Component {
                 <ProductConsumer>
                 {value => (
                 <div className='graphics-cards' onClick={() => value.handleDetail(id)}>
-                        <Link to={'/graphics-cards/' + id} >
+                        <Link to='/details' >
                             <img src={productImage} alt={productName} className='gpu-image'/>
                         </Link>
                         <h2 className='gpu-name'>{productName}</h2>

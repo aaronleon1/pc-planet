@@ -1,0 +1,16 @@
+.clear-cart{
+    padding: 16px 24px;
+    color: #f89858;
+    background: transparent;
+    border: 3px solid #f89858;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.clear-cart:hover{
+    
+    background: #B33A3A;
+    color: black;
+    border: 3px solid black;
+    font-weight: 800;
+}
