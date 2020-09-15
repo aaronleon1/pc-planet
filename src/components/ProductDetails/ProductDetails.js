@@ -31,7 +31,7 @@ class ProductDetails extends Component {
                                             onClick={() =>{
                                                 value.addToCart(id)
                                                 value.openModal(id)
-                                    }}><i class="fas fa-cart-plus" />{inCart ? 'inCart' : 'add to cart'}</button>
+                                    }}><i class="fas fa-cart-plus" />{inCart ? 'In Cart' : ' Add to Cart'}</button>
                                 </div>
                                 <div className='prod-specs'>
                                     <Tabs >

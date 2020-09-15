@@ -1,13 +1,31 @@
 .item-row{
     display: flex;
     margin: 1rem auto;
-    background-color: blanchedalmond;
-    width: 60%;
+    background-color: white;
+    justify-content: space-evenly ;
     border-radius: 16px;
+    align-items: center;
+    max-width: 70%;
+    
 }
 
-.item-image, .item-name, .item-price{
-    margin: 0 1rem;
+.item-image, .item-name, .item-price, .item-remove, .item-total{
+    margin: 2rem 1rem;
+}
+
+.item-name{
+    width: 150px;
+}
+
+.item-remove, .item-total{
+    padding: 1rem;
+}
+
+
+
+.inner-cart-btns{
+    margin:2rem 0.2rem 2rem 2rem;
+    width: 125px;
 }
 
 
@@ -20,9 +38,10 @@
     padding: 8px 10px;
     cursor: pointer
 }
-.decrement-btn, .increment-btn, .active-count, .item-remove, .item-total{
+.decrement-btn, .increment-btn, .active-count{
     margin: 0.5rem;
 }
+
 
 .decrement-btn:hover{
     font-size: 1.2rem;
@@ -32,11 +51,24 @@
 .increment-btn:hover{
     font-size: 1.2rem;
     background: #4BB543;
-}
+} 
 
 
-.item-remove{
+.fa-times{
     color: black;
     font-size: 1.8rem;
     cursor: pointer;
 }
+
+@media (max-width: 960px) {
+    .item-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+    }
+}
+
+

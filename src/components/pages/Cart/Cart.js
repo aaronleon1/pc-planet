@@ -22,10 +22,10 @@ class Cart extends Component {
                         }
                         else{
                             return(
-                                <div>
-                                    <p>
+                                <div className='empty-cart'>
+                                    <h1>
                                         There are no items in your cart!
-                                    </p>
+                                    </h1>
                                 </div>
                             )
                         }

@@ -24,7 +24,7 @@ class GPUCard extends Component {
                         <button className='view-btn' disabled={inCart ? true : false}
                         onClick={() => {
                         value.addToCart(id) 
-                        value.openModal(id)}}>{inCart ? 'inCart' : 'add to cart'}</button>
+                        value.openModal(id)}}>{inCart ? 'In Cart' : <i className='fas fa-cart-plus'> Add to Cart</i>}</button>
                     </div>
                 )}
                 </ProductConsumer>

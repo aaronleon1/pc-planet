@@ -25,6 +25,6 @@ function CartTotals({value}){
         </div>
        </>
     )
-}
+} 
 
 export default CartTotals

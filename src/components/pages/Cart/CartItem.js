@@ -10,7 +10,7 @@ function CartItem({item, value}){
                 <img src={productImage} style={{width: '8rem', height: '8rem', padding: '0.5rem 0'}} alt={productName} />
             </div>
             <div className='item-name'>
-                <h3>Product: {productName}</h3>
+                <h3>{productName}</h3>
             </div>
             <div className='item-price'>
                 <h3>Price: {productPrice}</h3>
@@ -30,7 +30,7 @@ function CartItem({item, value}){
             <div className='item-total'>
                 <strong> Item Total: ${total}</strong>
             </div>
-        </div>
+        </div> 
     )
 }
 

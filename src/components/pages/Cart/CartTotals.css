@@ -1,3 +1,10 @@
+.cartTotals-container{
+    text-align: right;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
 .clear-cart{
     padding: 16px 24px;
     color: #f89858;
@@ -8,9 +15,23 @@
 }
 
 .clear-cart:hover{
-    
     background: #B33A3A;
     color: black;
     border: 3px solid black;
     font-weight: 800;
+}
+
+@media (max-width: 960px) {
+    .cartTotals-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        text-align: left;
+    }
+
+    .clear-cart{
+        width: 95%;
+        margin: 1rem;
+    }
 }
