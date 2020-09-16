@@ -1,5 +1,4 @@
 import React from 'react'
-import {graphicsProducts} from './GPU'
 import '../../Products.css'
 import GPUCard from '../../../../pages/GraphicsCards/GPUCard';
 import {ProductConsumer} from '../../../../context'

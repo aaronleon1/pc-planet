@@ -1,7 +1,7 @@
 import React from 'react';
 import './Ram.css'
 import Products from '../../UI/ProductCard/Products/RAM/RAM'
-import {Link} from 'react-router-dom'
+
 
 
 const Ram = () => {
@@ -13,8 +13,8 @@ const Ram = () => {
             <div className='ram-cards-wrapper'>
                 {Products.map((ram, index) => {
                             return (
-                            <div className='card-wrapper'>
-                                <div className='ram-cards' key={index}>
+                            <div className='card-wrapper' key={index}>
+                                <div className='ram-cards' >
                                     <img src={require(`../../../../public/assets/${ram.productImage}.jpg`)} alt={ram.productName} className='ram-image'/>
                                     <h2 className='ram-name'>{ram.productName}</h2>
                                     <p className='ram-price'>{ram.productPrice}</p>

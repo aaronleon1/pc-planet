@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import GraphicsCards from './GraphicsCards'
-import ProductDetails from '../../ProductDetails/ProductDetails'
 import {ProductConsumer} from '../../context'
 import {Link} from 'react-router-dom'
 

@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import './GraphicsCards.css'
-import {BrowserRouter as Router, Route, Link, useHistory} from 'react-router-dom'
 import GPUCard from './GPUCard';
-import ProductDetails from '../../ProductDetails/ProductDetails';
 import {ProductConsumer} from '../../context'
 
 

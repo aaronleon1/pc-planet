@@ -1,6 +1,5 @@
-import React, { useState, Component } from 'react';
+import React, {Component } from 'react';
 import './ProductDetails.css'
-import GraphicsCards from '../pages/GraphicsCards/GraphicsCards'
 import { Link } from 'react-router-dom'
 import { ProductConsumer } from '../context'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -25,13 +24,13 @@ class ProductDetails extends Component {
                                 <div className='prod-details'>
                                     <p>{productName}</p>
                                     <p>{productPrice}</p>
-                                    <button className='back-btn'><i class="fas fa-arrow-left" /> Back  to Products</button>
+                                    <button className='back-btn'><i className="fas fa-arrow-left" /> Back  to Products</button>
                                     <button className='add-to-cart' 
                                         disabled={inCart ? true : false} 
                                             onClick={() =>{
                                                 value.addToCart(id)
                                                 value.openModal(id)
-                                    }}><i class="fas fa-cart-plus" />{inCart ? 'In Cart' : ' Add to Cart'}</button>
+                                    }}><i className="fas fa-cart-plus" />{inCart ? 'In Cart' : ' Add to Cart'}</button>
                                 </div>
                                 <div className='prod-specs'>
                                     <Tabs >

@@ -32,12 +32,11 @@ class HeroSlider extends Component {
             className: 'slides'
         }
         return(
-
             <div className='slider'>
                 <Slider {...settings}>
-                    {banners.map((photo) =>{
+                    {banners.map((photo, index) =>{
                         return(
-                            <div>
+                            <div key={index}>
                                 <img width='100%' height='100%'src={require(`../../../../public/assets/${photo.imgLocation}.png`)} alt={photo.imgName} />
                             </div>
                         )

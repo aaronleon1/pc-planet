@@ -13,24 +13,24 @@ const footer = () => {
                 <ul className='footer-list contact-footer'>
                     <h3>Contact Us</h3>
                     <li>
-                        <p><i class="fas fa-phone">: </i> 425-906-4377</p>
+                        <p><i className="fas fa-phone">: </i> 425-906-4377</p>
                     </li>
                     <li>
-                        <p><i class="fas fa-envelope">: </i> cs@pcplanet.com</p>
+                        <p><i className="fas fa-envelope">: </i> cs@pcplanet.com</p>
                     </li> 
                    
                     <li className='footer-list social-links'>
                         <p>Follow Us!</p>
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-instagram-square"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-youtube"></i>
+                        <i className="fab fa-facebook"></i>
+                        <i className="fab fa-instagram-square"></i>
+                        <i className="fab fa-twitter"></i>
+                        <i className="fab fa-youtube"></i>
                     </li>
                 </ul>
                 <ul className='footer-list location-footer'>
                     <h3>Visit Us</h3>
                     <li>
-                       <p><i class="fas fa-building">: </i> 32-71 Stockert Hollow Rd Seattle, WA 98119</p>
+                       <p><i className="fas fa-building">: </i> 32-71 Stockert Hollow Rd Seattle, WA 98119</p>
                     </li>
                 </ul>
                 <ul className='footer-list faq-footer'>
