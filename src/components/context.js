@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {graphicsProducts, detailProduct} from './UI/ProductCard/Products/GPU/GPU'
+import axios from 'axios'
 
 
 const ProductContext = React.createContext()
@@ -20,11 +21,22 @@ class ProductProvider extends Component {
         cartTotal: 0
     }
     componentDidMount() {
+        axios.get('https://pc-planet-55aa4.firebaseio.com/products.json')
+        .then(response => {
+            const fetchedProducts = []
+            for(let key in response.data){
+                fetchedProducts.push({
+                    ...response.data[key],
+                    prodID: key
+                })
+            }
+            this.setState({products: fetchedProducts})        
+         })
         this.setProducts();
     }
     setProducts = () => {
         let tempProducts = []
-        graphicsProducts.forEach(item => {
+        this.state.products.forEach(item => {
             const singleProduct = {...item};
             tempProducts = [...tempProducts, singleProduct]
             
