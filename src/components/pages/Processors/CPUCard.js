@@ -22,7 +22,7 @@ class CPUCard extends Component {
                         <button className='view-btn' disabled={inCart ? true : false}
                         onClick={() => {
                         value.addToCart(id) 
-                        value.openModal(id)}}>{inCart ? 'In Cart' : <i className='fas fa-cart-plus'></i>} Add to Cart</button>
+                        value.openModal(id)}}>{inCart ? 'In Cart' : <><i className='fas fa-cart-plus'/> Add To Cart</>}</button>
                     </div>
                 )}
                 </ProductConsumer>
