@@ -5,24 +5,24 @@ import {Link} from 'react-router-dom'
 
 
 
-class GPUCard extends Component {
+class CPUCard extends Component {
     render() {
-        const {id, productName, productImage, productPrice, inCart} = this.props.gpu
+        const {id, productName, productImage, productPrice, inCart} = this.props.cpu
 
         return(
             <div className='card-wrapper'>
                 <ProductConsumer>
                 {value => (
-                <div className='graphics-cards' onClick={() => value.handleDetail(id)}>
+                <div className='processors' onClick={() => value.handleDetail(id)}>
                         <Link to='/details' >
-                            <img src={productImage} alt={productName} className='gpu-image'/>
+                            <img src={productImage} alt={productName} className='cpu-image'/>
                         </Link>
-                        <h2 className='gpu-name'>{productName}</h2>
-                        <p className='gpu-price'>{productPrice}</p>
+                        <h2 className='cpu-name'>{productName}</h2>
+                        <p className='cpu-price'>{productPrice}</p>
                         <button className='view-btn' disabled={inCart ? true : false}
                         onClick={() => {
                         value.addToCart(id) 
-                        value.openModal(id)}}>{inCart ? 'In Cart' : <i className='fas fa-cart-plus'></i>} Add To Cart</button>
+                        value.openModal(id)}}>{inCart ? 'In Cart' : <i className='fas fa-cart-plus'></i>} Add to Cart</button>
                     </div>
                 )}
                 </ProductConsumer>
@@ -33,4 +33,4 @@ class GPUCard extends Component {
     
 }
 
-export default GPUCard
+export default CPUCard

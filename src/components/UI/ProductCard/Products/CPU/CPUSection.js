@@ -1,25 +1,23 @@
 import React from 'react'
-import CPU from './CPU'
 import '../../Products.css'
+import CPUCard from '../../../../pages/Processors/CPUCard';
+import {ProductConsumer} from '../../../../context'
 
-
-const CPUCard = (props) => {
+const ProcessorsHome = (props) => {
     return (
         <div className='ProductCards'>
-        {CPU.map((prod, index) => {
-        return (
-            <div className='product-card-wrapper' key={index}>
-                <div className='product-card'>
-                    <img src={require(`../../../../../../public/assets/${prod.productImage}.jpg`)} alt={prod.productName} className='product-image'/>
-                    <h2 className='product-name'>{prod.productName}</h2>
-                    <p className='product-price'>{prod.productPrice}</p>
-                    <button className='cart-btn'><i className="fas fa-cart-plus"></i> Add To Cart</button>
-                </div>
-            </div>
-            
-        )  
-        })}
+
+            <ProductConsumer>
+                    {value =>{
+                       return value.products.slice(0,8).map( cpu => {
+                           return <CPUCard key={cpu.id}
+                            cpu={cpu}  
+                            />
+                       })
+                    }}
+            </ProductConsumer>
     </div>
     )
 }
-export default CPUCard
+
+export default ProcessorsHome

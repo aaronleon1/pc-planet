@@ -1,24 +1,23 @@
 import React from 'react'
-import RAM from './RAM'
 import '../../Products.css'
+import RAMCard from '../../../../pages/RAM/RAMCards';
+import {ProductConsumer} from '../../../../context'
 
-
-const RAMCard = (props) => {
+const RAMHome = (props) => {
     return (
         <div className='ProductCards'>
-        {RAM.map((prod, index) => {
-        return (
-            <div className='product-card-wrapper' key={index}>
-                <div className='product-card'>
-                    <img src={require(`../../../../../../public/assets/${prod.productImage}.jpg`)} alt={prod.productName} className='product-image'/>
-                    <h2 className='product-name'>{prod.productName}</h2>
-                    <p className='product-price'>{prod.productPrice}</p>
-                    <button className='cart-btn'><i className="fas fa-cart-plus"></i> Add To Cart</button>
-                </div>
-            </div>
-        )  
-        })}
+
+            <ProductConsumer>
+                    {value =>{
+                       return value.products.slice(16,19).map( ram => {
+                           return <RAMCard key={ram.id}
+                            ram={ram}  
+                            />
+                       })
+                    }}
+            </ProductConsumer>
     </div>
     )
 }
-export default RAMCard
+
+export default RAMHome
