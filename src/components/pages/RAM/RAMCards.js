@@ -18,7 +18,7 @@ class RAMCard extends Component {
                             <img src={productImage} alt={productName} className='ram-image'/>
                         </Link>
                         <h2 className='ram-name'>{productName}</h2>
-                        <p className='ram-price'>{productPrice}</p>
+                        <p className='ram-price'>${productPrice}</p>
                         <button className='view-btn' disabled={inCart ? true : false}
                         onClick={() => {
                         value.addToCart(id) 

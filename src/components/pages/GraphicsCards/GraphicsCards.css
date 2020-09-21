@@ -111,5 +111,8 @@
         margin: 1rem 0;
         
     }
+    .view-btn{
+        width: 100%;
+    }
 
 }

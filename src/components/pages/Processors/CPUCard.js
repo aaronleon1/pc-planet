@@ -18,7 +18,7 @@ class CPUCard extends Component {
                             <img src={productImage} alt={productName} className='cpu-image'/>
                         </Link>
                         <h2 className='cpu-name'>{productName}</h2>
-                        <p className='cpu-price'>{productPrice}</p>
+                        <p className='cpu-price'>${productPrice}</p>
                         <button className='view-btn' disabled={inCart ? true : false}
                         onClick={() => {
                         value.addToCart(id) 

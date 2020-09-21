@@ -18,7 +18,7 @@ class GPUCard extends Component {
                             <img src={productImage} alt={productName} className='gpu-image'/>
                         </Link>
                         <h2 className='gpu-name'>{productName}</h2>
-                        <p className='gpu-price'>{productPrice}</p>
+                        <p className='gpu-price'>${productPrice}</p>
                         <button className='view-btn' disabled={inCart ? true : false}
                         onClick={() => {
                         value.addToCart(id) 
