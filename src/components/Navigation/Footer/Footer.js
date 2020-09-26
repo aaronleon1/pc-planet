@@ -1,12 +1,12 @@
 import React from 'react'
 import './Footer.css'
 
-const footer = () => {
+const footer = () => { 
     return (
         <div className='footer-wrapper'>
             <div className='footer'>
                 <div className='newsletter'>
-                    <p>Subscribe to our Newsletter for exclusive deals!</p>
+                    <h3>Subscribe to our Newsletter for exclusive deals!</h3>
                     <input type='text' placeholder='E-mail Address' />
                     <button className='newsletter-btn' type='submit'>Submit</button>
                 </div>
@@ -30,7 +30,7 @@ const footer = () => {
                 <ul className='footer-list location-footer'>
                     <h3>Visit Us</h3>
                     <li>
-                       <p><i className="fas fa-building">: </i> 32-71 Stockert Hollow Rd Seattle, WA 98119</p>
+                       <p><i className="fas fa-building">: </i> 32-71 Stockert Hollow Rd <br />Seattle, WA 98119</p>
                     </li>
                 </ul>
                 <ul className='footer-list faq-footer'>
