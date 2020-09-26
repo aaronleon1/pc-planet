@@ -1,7 +1,7 @@
 import React from 'react'
-import '../../Products.css'
-import GPUCard from '../../../../pages/GraphicsCards/GPUCard';
-import {ProductConsumer} from '../../../../context'
+import '../../../ProductCard/ProductCard.css'
+import ProductCard from '../../../ProductCard/ProductCard';
+import {ProductConsumer} from '../../../context'
 
 const GraphicsCardsHome = (props) => {
     return (
@@ -9,9 +9,9 @@ const GraphicsCardsHome = (props) => {
 
             <ProductConsumer>
                     {value =>{
-                       return value.products.slice(0,8).map( gpu => {
-                           return <GPUCard key={gpu.id}
-                            gpu={gpu}  
+                       return value.products.slice(0,3).map( prod => {
+                           return <ProductCard key={prod.id}
+                            prod={prod}  
                             />
                        })
                     }}

@@ -1,7 +1,7 @@
 import React from 'react'
-import GraphicsCardsHome from '../../../components/UI/ProductCard/Products/GPU/GPUSection'
-import ProcessorsHome from '../../../components/UI/ProductCard/Products/CPU/CPUSection'
-import RAMHome from '../../../components/UI/ProductCard/Products/RAM/RAMSection'
+import GraphicsCardsHome from '../../../components/UI//FeaturedCards/GPU/GPUSection'
+import ProcessorsHome from '../../../components/UI//FeaturedCards/CPU/CPUSection'
+import RAMHome from '../../../components/UI//FeaturedCards/RAM/RAMSection'
 import './FeaturedProducts.css'
 
 const featuredProducts = (props) => {

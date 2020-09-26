@@ -1,7 +1,7 @@
 import React from 'react'
-import '../../Products.css'
-import CPUCard from '../../../../pages/Processors/CPUCard';
-import {ProductConsumer} from '../../../../context'
+import '../../../ProductCard/ProductCard.css'
+import ProductCard from '../../../ProductCard/ProductCard';
+import {ProductConsumer} from '../../../context'
 
 const ProcessorsHome = (props) => {
     return (
@@ -9,9 +9,9 @@ const ProcessorsHome = (props) => {
 
             <ProductConsumer>
                     {value =>{
-                       return value.products.slice(8,16).map( cpu => {
-                           return <CPUCard key={cpu.id}
-                            cpu={cpu}  
+                       return value.products.slice(8,11).map( prod => {
+                           return <ProductCard key={prod.id}
+                            prod={prod}  
                             />
                        })
                     }}

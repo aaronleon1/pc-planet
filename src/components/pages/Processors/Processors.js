@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import './Processors.css'
+import '../../ProductCard/ProductCard.css'
 import {ProductConsumer} from '../../context'
-import CPUCard from './CPUCard'
-
-
+import ProductCard from '../../ProductCard/ProductCard'
 
 
 class Processors extends Component {
@@ -11,16 +9,16 @@ class Processors extends Component {
     render() {
         return(
             
-            <div className='processors-wrapper'> 
-                <div className='processors-head'>
+            <div className='product-wrapper'> 
+                <div className='product-head'>
                     <h1>Processors</h1>
                 </div>
-                <div className='cpu-cards-wrapper'>
+                <div className='product-cards-wrapper'>
                 <ProductConsumer>
                     {value =>{
-                       return value.products.slice(8,16).map( cpu => {
-                           return <CPUCard key={cpu.id}
-                            cpu={cpu}  
+                       return value.products.slice(8,16).map( prod => {
+                           return <ProductCard key={prod.id}
+                            prod={prod}  
                             />
                        })
                     }}

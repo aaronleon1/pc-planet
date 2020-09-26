@@ -1,11 +1,29 @@
-.graphics-wrapper {
+.ProductCards {
+    margin: 2% auto auto auto;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 275px;
+    height: 375px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.product-wrapper {
     width: 100%;
     height: 100%;
     padding: 0;
     display: block;
 }
 
-.graphics-head{
+.product-head{
     text-align: center;
     background: #ccc;
     border-bottom: 5px solid black;
@@ -13,12 +31,12 @@
     margin: 0;
 }
 
-.graphics-head h1{
+.product-head h1{
     margin: 0;
     padding: 1rem;
 }
 
-.gpu-cards-wrapper {
+.product-cards-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,7 +45,7 @@
 
 }
 
-.graphics-cards{
+.product {
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -44,15 +62,13 @@
 }
 
 
-
-
-.graphics-cards a{
+.product a{
     margin: 0;
     padding: 0;
     height: 60%;
     width: 100%;
 }
-.gpu-image {
+.product-image {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -60,17 +76,17 @@
     border-bottom: solid 5px black;
 }
 
-.gpu-name {
+.product-name {
     margin: 5px 0 0 10px;
     font-size: 20px;
 }
-.gpu-price, .gpu-price p{
+.product-price, .product-price p{
     font-size: 18px;
     font-weight: 500;
     margin: 16px 0;
 }
 
-.view-btn {
+.cart-btn {
     width: 50%;
     height: 40px;
     margin: auto;
@@ -86,33 +102,30 @@
     font-family: 'Monda', sans-serif;
 }
 
-.view-btn:hover {
+.cart-btn:hover {
     transform: scale(1.04);
 }
 
 @media screen and (max-width: 960px) {
-    .gpu-card-wrapper{
+    .product-card-wrapper{
         display: block;
         width: 100%;
         margin: auto;
     }
-    .graphics-cards{
+    .product{
         width: 90%;
         margin: 30px auto auto auto;
         height: 500px;
     }
-    .gpu-image{
+    .product-image{
         height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
     }
-    .gpu-price{
+    .product-price{
         margin: 1rem 0;
         
-    }
-    .view-btn{
-        width: 100%;
     }
 
 }

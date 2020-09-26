@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './GraphicsCards.css'
-import GPUCard from './GPUCard';
+import '../../ProductCard/ProductCard.css'
+import ProductCard from '../../ProductCard/ProductCard';
 import {ProductConsumer} from '../../context'
 
 
@@ -9,16 +9,16 @@ class GraphicsCards extends Component {
     render() {
         return(
             
-            <div className='graphics-wrapper'> 
-                <div className='graphics-head'>
+            <div className='products-wrapper'> 
+                <div className='products-head'>
                     <h1>Graphics Cards</h1>
                 </div>
-                <div className='gpu-cards-wrapper'>
+                <div className='products-cards-wrapper'>
                 <ProductConsumer>
                     {value =>{
-                       return value.products.slice(0,8).map( gpu => {
-                           return <GPUCard key={gpu.id}
-                            gpu={gpu}  
+                       return value.products.slice(0,8).map( prod => {
+                           return <ProductCard key={prod.id}
+                            prod={prod}  
                             />
                        })
                     }}
@@ -30,27 +30,6 @@ class GraphicsCards extends Component {
     }
         
     }
-    /*
- <div className='gpu-cards-wrapper'>
-                    {graphicsProducts.map((gpu, index) => {
-                                return (
-                                <Link to={'/graphics-cards/'+ gpu.id}>
-                                    
-                                        <GPUCard key={gpu.id}
-                                        image={gpu.productImage}
-                                        name={gpu.productName}
-                                        price={gpu.productPrice}
-                                        
-                                        />
-                                    
-                                </Link>
-                                
-                            )  
-                            })}
-                </div>
-    */
-        
-
     
 
 export default GraphicsCards

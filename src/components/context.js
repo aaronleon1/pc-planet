@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {graphicsProducts, detailProduct} from './UI/ProductCard/Products/GPU/GPU'
+import {graphicsProducts, detailProduct} from './UI/FeaturedCards/GPU/GPU'
 import axios from 'axios'
 
 
