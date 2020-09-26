@@ -22,7 +22,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 30px auto;
-    width: 60%;
+    width: 80%;
 }
 
 
@@ -32,8 +32,8 @@
 
 .category-card{
     display: block;
-    width: 400px;
-    height: 525px;
+    width: 350px;
+    height: 425px;
     color: #292f33;
     box-shadow: 0px 10px 5px #aaaaaa;
     border: 2px solid #ccc;
@@ -44,10 +44,6 @@
     text-align: center;
 }
 
-.category-card:hover{
-    transform: scale(1.1);
-}
-
 
 .category-img {
     margin: 0;
@@ -55,4 +51,13 @@
     max-width: 100%;
     max-height: 60%;
     border-bottom: 5px solid black;
+}
+
+.card-links button{
+    padding: 16px;
+    background: #4ad9e4;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 14px;
 }
