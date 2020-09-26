@@ -16,14 +16,13 @@ class ProductDetails extends Component {
                     const { id, productName, productImage, productPrice, details, inCart } = value.detailProduct
                     return (
                         <div className='detail-wrapper'>
-
                             <div className='product-detail-wrapper'>
                                 <div className='prod-image'>
                                     <img src={productImage} alt={productName} />
                                 </div>
                                 <div className='prod-details'>
                                     <p>{productName}</p>
-                                    <p>{productPrice}</p>
+                                    <p>${productPrice}</p>
                                     <button className='back-btn'><i className="fas fa-arrow-left" /> Back  to Products</button>
                                     <button className='add-to-cart' 
                                         disabled={inCart ? true : false} 
@@ -32,7 +31,8 @@ class ProductDetails extends Component {
                                                 value.openModal(id)
                                     }}><i className="fas fa-cart-plus" />{inCart ? 'In Cart' : ' Add to Cart'}</button>
                                 </div>
-                                <div className='prod-specs'>
+                            </div>
+                            <div className='prod-specs'>
                                     <Tabs >
                                         <TabList>
                                             <Tab>Product Specifications</Tab>
@@ -50,7 +50,6 @@ class ProductDetails extends Component {
                                         </TabPanel>
                                     </Tabs>
                                 </div>
-                            </div>
                         </div>
                     )
                 }}
