@@ -6,7 +6,7 @@ class Default extends Component {
     componentDidMount(){
         axios.get('https://pc-planet-55aa4.firebaseio.com/graphics-cards.json')
         .then(response => {
-            console.log(response)
+            console.log(response.data)
         })
     }
     render() {
