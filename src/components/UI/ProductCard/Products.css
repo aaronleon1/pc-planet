@@ -3,11 +3,11 @@
 }
 
 .ProductCards {
-    margin: 1rem auto auto auto;
+    margin: 1rem auto;
     width: 50%;
-    height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: left;
     flex-wrap: wrap;
 }
 
@@ -47,24 +47,17 @@
     margin: 5px 0 0 10px;
 }
 
-.cart-btn {
-    width: 50%;
-    height: 40px;
-    margin: auto;
-    bottom: 0;
-    padding-bottom: 5px;
-    outline: none;
-    border-radius: 5px;
-    background: #4ad9e4;
-    color: #292f33;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .cart-btn:hover {
     transform: scale(1.04);
+}
+
+
+@media screen and (max-width: 1250px){
+    .ProductCards{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 960px) {

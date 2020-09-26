@@ -9,7 +9,7 @@ const GraphicsCardsHome = (props) => {
 
             <ProductConsumer>
                     {value =>{
-                       return value.products.map( gpu => {
+                       return value.products.slice(0,8).map( gpu => {
                            return <GPUCard key={gpu.id}
                             gpu={gpu}  
                             />
