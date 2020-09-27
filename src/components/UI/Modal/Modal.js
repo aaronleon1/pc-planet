@@ -17,10 +17,10 @@ class Modal extends Component {
                         return(
                             <div className='modal-container'>
                                 <div className='modal-inner'>
-                                    <h5>item added to cart</h5>
+                                    <h2>item added to cart</h2>
                                     <img src={productImage} className='modal-image' alt={productName} />
-                                    <h5>{productName}</h5>
-                                    <h5>Price: ${productPrice}</h5>
+                                    <h4>{productName}</h4>
+                                    <h4>Price: ${productPrice}</h4>
                                     <Link to='/'>
                                         <button className='modal-continue' onClick={() => closeModal()}>
                                             Keep Shopping

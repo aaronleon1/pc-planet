@@ -11,8 +11,8 @@
 }
 
 .modal-inner {
-    width: 50%;
-    height: 80%;
+    width: 25%;
+    height: 60%;
     background: #EEEEEE;
     padding: 16px;
     text-align: center;
@@ -22,7 +22,7 @@
 
 .modal-image {
     max-width: 100%;
-    max-height: 65%;
+    max-height: 55%;
 }
 
 .modal-continue, .modal-cart{
@@ -41,4 +41,11 @@
     background: #7577fa;
     color: white;
     border: 2px solid  #4ad9e4;
+}
+
+@media screen and (max-width: 960px){
+    .modal-inner{
+        width: 80%;
+        height: 55%
+    }
 }
