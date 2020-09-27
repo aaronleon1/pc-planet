@@ -13,7 +13,7 @@ function CartItem({item, value}){
                 <h3>{productName}</h3>
             </div>
             <div className='item-price'>
-                <h3>Price: {productPrice}</h3>
+                <h3>Price: ${productPrice}</h3>
             </div>
             <div className='cart-btn-container'>
                 <div className='inner-cart-btns'>

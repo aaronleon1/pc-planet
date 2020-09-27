@@ -82,7 +82,7 @@
       height: 90vh;
       position: absolute;
       top: 80px;
-      left: -100%;
+      left: -150%;
       opacity: 1;
       transition: all 0.5s ease;
       margin: 0; 
@@ -94,11 +94,12 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 2;
+      padding: 0
     }
   
     .nav-links {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 0;
       width: 100%;
       display: table;
     }
@@ -106,6 +107,10 @@
     .nav-links:hover {
       background-color: #6668f4;
       border-radius: 0;
+    }
+    .nav-item{
+      width: 60%;
+      margin: 0 auto;
     }
   
     .navbar-logo {
@@ -133,10 +138,10 @@
     .nav-links-mobile {
       display: block;
       text-align: center;
-      padding: 1.5rem;
+      padding: 16px;
       margin: 2rem auto;
       border-radius: 4px;
-      width: 80%;
+      width: 100%;
       background: #4ad9e4;
       text-decoration: none;
       color: #fff;
