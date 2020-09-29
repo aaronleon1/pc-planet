@@ -5,10 +5,13 @@ import ProductCard from '../../ProductCard/ProductCard'
 
 
 class Processors extends Component {
-
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
+        
+
         return(
-            
             <div className='product-wrapper'> 
                 <div className='product-head'>
                     <h1>Processors</h1>

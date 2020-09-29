@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './ContactUs.css'
 
-const ContactUs = () => {
+
+function ContactUs () {
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	  }, [])
     return (
         <div className='contact-wrapper'>
             <form className="contact">

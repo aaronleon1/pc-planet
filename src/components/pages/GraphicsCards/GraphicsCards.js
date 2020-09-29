@@ -6,7 +6,11 @@ import {ProductConsumer} from '../../context'
 
 class GraphicsCards extends Component {
 
+    componentDidMount(){
+        window.scrollTo(0, 0)
+      }
     render() {
+        
         return(
             
             <div className='product-wrapper'> 

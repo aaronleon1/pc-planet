@@ -2,7 +2,11 @@ import React, {Component} from 'react'
 import './Default.css'
 
 class Default extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render() {
+        
         return(
             <div className='error-container'>
                 <div className='error-code'>

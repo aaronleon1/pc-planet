@@ -5,7 +5,11 @@ import CartList from './CartList'
 import CartTotals from './CartTotals'
 
 class Cart extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render(){
+        
         return(
             <section>
                 <ProductConsumer>

@@ -9,7 +9,11 @@ import 'react-tabs/style/react-tabs.css';
 
 
 class ProductDetails extends Component {
-    render() {
+    
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }render() {
+        
         return (
             <ProductConsumer>
                 {(value) => {

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Products.css'
 import {Link} from 'react-router-dom'
 
 
 
 const Products = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className='products-wrapper'> 
             <div className='product-head'>
