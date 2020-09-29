@@ -19,7 +19,7 @@ function CartTotals({value}){
                     intent: "CAPTURE",
                     purchase_units:[
                         {
-                            description: `${productName}`,
+                            description: 'test',
                             amount: {
                                 currency_code: "USD",
                                 value: `${cartTotal}`,
@@ -37,7 +37,7 @@ function CartTotals({value}){
                 console.error(err)
             },
         }).render(paypalRef.current)
-    }, [])
+    },[])
 
     
     return(
@@ -45,7 +45,7 @@ function CartTotals({value}){
         <div className='cartTotals-container'>
             {paidFor ? (
                 <div>
-                    <h1>big win</h1>
+                    <h1>Thank you for your purchase!</h1>
                 </div>
             ): (
             <>

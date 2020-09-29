@@ -21,11 +21,9 @@ class Modal extends Component {
                                     <img src={productImage} className='modal-image' alt={productName} />
                                     <h4>{productName}</h4>
                                     <h4>Price: ${productPrice}</h4>
-                                    <Link to='/'>
                                         <button className='modal-continue' onClick={() => closeModal()}>
                                             Keep Shopping
                                         </button>
-                                    </Link>
                                     <Link to='/cart'>
                                         <button className='modal-cart' onClick={() => closeModal()}>
                                             Go to Cart
