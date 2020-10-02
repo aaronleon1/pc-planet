@@ -22,7 +22,7 @@ PLEASE DO NOT purchase the items from this app. No items will be delivered. PC P
 
 ### Known Issues
 
-- Notebook styling for all aspects of site must be addressed. Currently comfortable with destop and mobile styling.
+- Notebook styling for all aspects of site must be addressed. Currently comfortable with destop and mobile styling. (Zooming out to roughly 75% on Chrome has helped tremendously in the meantime)
 - Stlying and data handling after Paypal purchase
 
 ### Current Focus
