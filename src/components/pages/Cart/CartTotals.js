@@ -14,6 +14,10 @@ function CartTotals({value}){
     useEffect(()=> {
         window.paypal
         .Buttons({
+            style: {
+
+                height:  35,
+              },
             createOrder: (data, actions) => {
                 return actions.order.create({
                     intent: "CAPTURE",

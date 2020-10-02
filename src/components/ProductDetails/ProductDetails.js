@@ -43,7 +43,7 @@ class ProductDetails extends Component {
                                             <Tab>Warranty</Tab>
                                             <Tab>Shipping</Tab>
                                         </TabList>
-                                        <TabPanel>{details}</TabPanel>
+                                        <TabPanel>{details.replaceAll("\\n", "\n")}</TabPanel>
                                         <TabPanel><p>All products come standard with a 30-Day warranty unless marked otherwise.</p></TabPanel>
                                         <TabPanel>
                                             <ul>

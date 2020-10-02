@@ -1,8 +1,8 @@
 .cartTotals-container{
     text-align: right;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 1rem 1rem auto;
     font-size: 20px;
+    width: 300px;
 }
 
 .clear-cart{
@@ -20,6 +20,8 @@
     border: 3px solid black;
     font-weight: 800;
 }
+
+
 
 @media (max-width: 960px) {
     .cartTotals-container{
