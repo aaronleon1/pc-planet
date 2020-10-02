@@ -150,13 +150,15 @@ class ProductProvider extends Component {
     }
 
     clearCart = () => {
+         
         this.setState(() =>{
             return {cart: []}
         }, () => {
             this.setProducts()
             this.addTotals()
         })
-        
+        window.location.reload();
+          
     }
     addTotals = () => {
         let subTotal = 0;

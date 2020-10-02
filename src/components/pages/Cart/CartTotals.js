@@ -1,6 +1,6 @@
 import React, {useRef, useState, useEffect}  from 'react'
 import './CartTotals.css'
-import {Link} from 'react-router-dom'
+
 
 function CartTotals({value}){
     const {cartSubtotal, cartTax, cartTotal, clearCart, productName} = value;
@@ -54,9 +54,7 @@ function CartTotals({value}){
             ): (
             <>
                 <div className='clearCart-container'>
-                    <Link to='/'>
                         <button className='clear-cart' onClick={() => clearCart()}>Clear Cart</button>
-                    </Link>
                 </div>
                 <div className='subtotal-container'>
                     <h4>Subtotal: ${cartSubtotal}</h4>
