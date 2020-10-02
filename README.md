@@ -4,7 +4,12 @@ The project features:
 - React Router 
 - Context API 
 - Firebase Realtime Database to provide JSON data 
-- Paypal payment processing 
+- Paypal payment processing <br />
+
+3rd party dependencies inclue: <br />
+- React Slick (Slider on Home Page)
+- Axios (Requests to database) 
+- React Tabs (Product Details page)
 
 
 ### WARNING ***PLEASE READ***
