@@ -11,6 +11,7 @@ The project features:
 - Axios (Requests to database) 
 - React Tabs (Product Details page)
 
+Live version available at: www.pcplanet.xyz
 
 ### WARNING ***PLEASE READ***
 
