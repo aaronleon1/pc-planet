@@ -56,9 +56,9 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-                        Sign Up
-                    </Link>
+                    <button className='nav-links-mobile' onClick={closeMobileMenu}>
+                    Sign Up
+                    </button>
                 </li>
                 <li className='nav-item'>
                     <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
@@ -70,6 +70,10 @@ const Navbar = () => {
         </nav>
     )
 }
+
+/*                
+<Button/>
+*/
 
 
 export default Navbar
