@@ -18,7 +18,7 @@
     width: 60%;
     margin: 1rem auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .prod-image {
@@ -87,7 +87,7 @@
 .prod-specs {  
     margin: 2rem 0;
     text-align: left;
-    padding: 0.5rem 20% 0 20%;
+    padding: 0.5rem 25% 0 25%;
     white-space: pre-wrap;
     border-top: 2px solid #f89858;
 }
@@ -105,14 +105,18 @@
         height: 100%;
     }
 
-    .prod-details, .prod-image, .prod-specs{
-        float: none;
-        clear: none;
-        width: 95%;
+    .prod-details, .prod-image {
+        width: 90vw;
         height: auto;
-        margin: 1rem;
+        margin: 1rem auto;
 
     }
+    .prod-specs{
+        width: 90vw;
+        margin: 1rem 0.3rem;
+        padding: 0 0.5rem;
+    }
+
 
 
 }

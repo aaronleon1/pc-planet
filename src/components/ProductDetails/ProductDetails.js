@@ -3,7 +3,7 @@ import './ProductDetails.css'
 import { Link } from 'react-router-dom'
 import { ProductConsumer } from '../context'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+import 'react-tabs/style/react-tabs.css'; 
 
 
 
@@ -12,7 +12,8 @@ class ProductDetails extends Component {
     
     componentDidMount() {
         window.scrollTo(0, 0)
-      }render() {
+      }
+      render() {
         
         return (
             <ProductConsumer>
@@ -65,27 +66,3 @@ class ProductDetails extends Component {
 }
 
 export default ProductDetails
-/*
-const productDetails = (props) => {
-    return (
-        <div className='detail-wrapper'>
-            <div className='detail-header'>{props.name}</div>
-            <div className='product-detail-wrapper'>
-                <div className='prod-image'>
-                    {props.image}
-                </div>
-                <div className='prod-details'>
-                    {props.name}
-                    {props.price}
-                </div>
-                <div className='prod-specs'>
-                    {props.description}
-                </div>
-            </div>
-        </div>
-    )
-}
-
-
-export default productDetails
-*/
