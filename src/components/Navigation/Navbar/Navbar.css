@@ -143,6 +143,9 @@
       padding: 16px;
       margin: 2rem auto;
       border-radius: 4px;
+      outline: none;
+      border: none;
+      cursor: pointer;
       width: 100%;
       background: #4ad9e4;
       text-decoration: none;
