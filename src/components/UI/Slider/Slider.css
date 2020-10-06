@@ -59,10 +59,4 @@
     font-size: 2vw;
 }
 
-@media (max-width: 960px) {
-    .slider{
-        height: 70%;
-        width: 100%;
-    }
-}
 
