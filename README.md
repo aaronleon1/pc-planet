@@ -7,7 +7,6 @@ The project features:
 - Paypal payment processing <br />
 
 3rd party dependencies include: <br />
-- React Slick (Slider on Home Page)
 - Axios (Requests to database) 
 - React Tabs (Product Details page)
 
