@@ -17,3 +17,15 @@
     font-family: 'Monda', sans-serif;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 960px){
+    .featured-wrapper{
+        margin: 0;
+        padding: 0;
+    }
+
+    .featured-wrapper h1{
+        padding: 10px 0;
+        margin: 0;
+    }
+}
