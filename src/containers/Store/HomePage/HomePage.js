@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import HeroSlider from '../../../components/UI/Slider/Slider'
 import FeaturedProducts from './FeaturedProducts'
-import './HomePage.css'
 
 
 class HomePage extends Component {
