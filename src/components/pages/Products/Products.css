@@ -59,5 +59,6 @@
     cursor: pointer;
     border: none;
     outline: none;
+    color: white;
     font-size: 14px;
 }
