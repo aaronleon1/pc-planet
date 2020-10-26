@@ -1,4 +1,4 @@
-import React, {Component } from 'react';
+import React, {Component} from 'react';
 import './ProductDetails.css'
 import { Link } from 'react-router-dom'
 import { ProductConsumer } from '../context'
@@ -28,7 +28,9 @@ class ProductDetails extends Component {
                                 <div className='prod-details'>
                                     <p>{productName}</p>
                                     <p>${productPrice}</p>
-                                    <button className='back-btn'><i className="fas fa-arrow-left" /> Back  to Products</button>
+                                    <Link to='/products'>
+                                    <button className='back-btn'><i className="fas fa-arrow-left" /> Back to Products</button>
+                                    </Link>
                                     <button className='add-to-cart' 
                                         disabled={inCart ? true : false} 
                                             onClick={() =>{

@@ -4,8 +4,6 @@ import axios from 'axios'
 
 
 const ProductContext = React.createContext()
-//Provider provides all information
-//Consumer allows use of that info. wont need props
 
 
 
@@ -55,6 +53,7 @@ class ProductProvider extends Component {
         this.setState(() => {
             return {detailProduct: product}
         })
+        
     }
 
     addToCart = (id) => {
