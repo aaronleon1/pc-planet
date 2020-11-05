@@ -7,7 +7,7 @@
 
 .product-head{
     text-align: center;
-    background: #ccc;
+    background-color: black;
     border-bottom: 5px solid black;
     padding: 0;
     margin: 0;
@@ -15,6 +15,7 @@
 .product-head h1{
     margin: 0;
     padding: 1rem;
+    color:  #7577fa;
 }
 
 .product-categories {

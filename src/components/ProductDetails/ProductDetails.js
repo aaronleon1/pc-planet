@@ -26,8 +26,8 @@ class ProductDetails extends Component {
                                     <img src={productImage} alt={productName} />
                                 </div>
                                 <div className='prod-details'>
-                                    <p>{productName}</p>
-                                    <p>${productPrice}</p>
+                                    <h2>{productName}</h2>
+                                    <h2>${productPrice}</h2>
                                     <Link to='/products'>
                                     <button className='back-btn'><i className="fas fa-arrow-left" /> Back to Products</button>
                                     </Link>
@@ -36,10 +36,8 @@ class ProductDetails extends Component {
                                             onClick={() =>{
                                                 value.addToCart(id)
                                                 value.openModal(id)
-                                    }}><i className="fas fa-cart-plus" />{inCart ? 'In Cart' : ' Add to Cart'}</button>
-                                </div>
-                            </div>
-                            <div className='prod-specs'>
+                                    }}><i className="fas fa-cart-plus" />{inCart ? ' In Cart' : ' Add to Cart'}</button>
+                                    <div className='prod-specs'>
                                     <Tabs >
                                         <TabList>
                                             <Tab>Product Specifications</Tab>
@@ -57,7 +55,11 @@ class ProductDetails extends Component {
                                         </TabPanel>
                                     </Tabs>
                                 </div>
+                                </div>
+                                
+                            </div>
                         </div>
+                           
                     )
                 }}
             </ProductConsumer>
