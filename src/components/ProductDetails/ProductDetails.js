@@ -40,7 +40,7 @@ class ProductDetails extends Component {
                                     <div className='prod-specs'>
                                     <Tabs >
                                         <TabList>
-                                            <Tab>Product Specifications</Tab>
+                                            <Tab>Specifications</Tab>
                                             <Tab>Warranty</Tab>
                                             <Tab>Shipping</Tab>
                                         </TabList>

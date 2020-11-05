@@ -45,18 +45,17 @@
 .prod-details h2{
     padding: 1rem 0;
     margin: 1rem 0;
-    font-weight: 700;
-    font-size: 1rem;
     font-family: 'Open Sans', serif;
 }
 .back-btn{
     height: 50px;
-    width: 95%;
+    width: 40%;
     background-color:#f89858;
     color: white;
     outline: none;
     border: none;
     cursor: pointer;
+    margin-right: 1rem;
 }
 
 .back-btn:hover {
@@ -66,7 +65,7 @@
 
 .add-to-cart{
     height: 50px;
-    width: 95%;
+    width: 40%;
     background-color: #6668f4;
     color: white;
     outline: none;
@@ -82,7 +81,7 @@
 
 .back-btn, .add-to-cart{
     padding: 1rem 0;
-    margin: 1rem 0;
+    
 }
 
 .prod-specs {  
