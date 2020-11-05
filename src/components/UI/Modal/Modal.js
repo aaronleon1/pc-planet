@@ -17,7 +17,7 @@ class Modal extends Component {
                         return(
                             <div className='modal-container'>
                                 <div className='modal-inner'>
-                                    <h2>item added to cart</h2>
+                                    <h3>Added to Cart</h3>
                                     <img src={productImage} className='modal-image' alt={productName} />
                                     <h4>{productName}</h4>
                                     <h4>Price: ${productPrice}</h4>
