@@ -7,7 +7,7 @@ import './FeaturedProducts.css'
 const featuredProducts = (props) => {
     return (
         <div className='featured-wrapper'>
-            <h1>Featured Prodcuts</h1>
+            <h1>Featured Products</h1>
             <GraphicsCardsHome />
             <ProcessorsHome />
             <RAMHome/>

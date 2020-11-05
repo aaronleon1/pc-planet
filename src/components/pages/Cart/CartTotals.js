@@ -53,9 +53,7 @@ function CartTotals({value}){
                 </div>
             ): (
             <>
-                <div className='clearCart-container'>
-                        <button className='clear-cart' onClick={() => clearCart()}>Clear Cart</button>
-                </div>
+               
                 <div className='subtotal-container'>
                     <h4>Subtotal: ${cartSubtotal}</h4>
                 </div>
