@@ -1,18 +1,58 @@
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+  }
+
 .detail-wrapper { 
     height: 60%;
     width: 100%;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
 }
-.detail-header {
-    width: 100%;
-    height: 80px;
-    background:#3acbf7;
-    text-align: center;
-    padding-top: 30px;
-    margin: 0;
-    font-size: 18px;
-    font-weight: 900;
 
-}
 
 .product-detail-wrapper {
     width: 90%;
@@ -21,7 +61,7 @@
     justify-content: space-evenly;
 }
 
-.prod-image {
+.prod-image { 
     height: 550px;
     width: auto;
 }
@@ -33,40 +73,25 @@
 }
 
 .prod-details {
-    width: 900px;
+    width: 40%;
     min-height: 100%;
-    text-align: center;
-    background-color: white;
-    border: 2px solid gray;
-    border-bottom: 5px solid #3acbf7;
-    padding: 0;
+    text-align: left;
+    
     
 }
-.prod-details h2{
-    padding: 1rem 0;
-    margin: 1rem 0;
-    font-family: 'Open Sans', serif;
-}
-.back-btn{
-    height: 50px;
-    width: 40%;
-    background-color:#f89858;
-    color: white;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 1rem;
+.prod-details h1, .prod-details h2{
+    
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
 
-.back-btn:hover {
-    background-color: #eed202;
-    color: black;
-}
+
 
 .add-to-cart{
     height: 50px;
-    width: 40%;
-    background-color: #6668f4;
+    width: 20%;
+    background: linear-gradient(90deg, #6568f4,  #4ad9e4);
+    background-color: linear-gradient(90deg, #6568f4,  #4ad9e4);
     color: white;
     outline: none;
     border: none;
@@ -86,11 +111,13 @@
 
 .prod-specs {  
     margin: 2rem 0;
+    width: 70%;
     text-align: left;
     padding: 0.5rem 0;
     white-space: pre-wrap;
-    border-top: 2px solid #f89858;
+    border-top: 2px solid linear-gradient(90deg, #6568f4,  #4ad9e4);
 }
+
 
 
 @media (max-width: 960px) {
@@ -111,12 +138,17 @@
         margin: 1rem auto;
 
     }
+    .add-to-cart{
+        width: 40%;
+        text-align: center;
+    }
     .prod-specs{
         width: 100%;
         margin: 1rem 0;
         padding: 0;
         height: auto;
     }
+
 
 
 

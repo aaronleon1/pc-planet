@@ -26,11 +26,8 @@ class ProductDetails extends Component {
                                     <img src={productImage} alt={productName} />
                                 </div>
                                 <div className='prod-details'>
-                                    <h2>{productName}</h2>
+                                    <h1>{productName}</h1>
                                     <h2>${productPrice}</h2>
-                                    <Link to='/products'>
-                                    <button className='back-btn'><i className="fas fa-arrow-left" /> Back to Products</button>
-                                    </Link>
                                     <button className='add-to-cart' 
                                         disabled={inCart ? true : false} 
                                             onClick={() =>{
@@ -44,8 +41,20 @@ class ProductDetails extends Component {
                                             <Tab>Warranty</Tab>
                                             <Tab>Shipping</Tab>
                                         </TabList>
-                                        <TabPanel>{details.replaceAll("\\n", "\n")}</TabPanel>
-                                        <TabPanel><p>All products come standard with a 30-Day warranty unless marked otherwise.</p></TabPanel>
+                                        <TabPanel>
+                                            <ul>
+                                                <li>
+                                                {details.replaceAll("\\n", "\n")}
+                                                </li>    
+                                            </ul>
+                                        </TabPanel>
+                                        <TabPanel>
+                                            <ul>
+                                                <li>
+                                                    All products come standard with a 30-Day warranty unless marked otherwise.
+                                                </li>    
+                                            </ul>
+                                        </TabPanel>
                                         <TabPanel>
                                             <ul>
                                                 <li>5-7 Business Days: $5.99</li>
