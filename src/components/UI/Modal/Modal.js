@@ -3,7 +3,7 @@ import {ProductConsumer} from '../../context'
 import {Link} from 'react-router-dom'
 import './Modal.css'
 
-class Modal extends Component {
+class Modal extends Component { 
     render() {
         return(
             <ProductConsumer>
@@ -26,7 +26,7 @@ class Modal extends Component {
                                         </button>
                                     <Link to='/cart'>
                                         <button className='modal-cart' onClick={() => closeModal()}>
-                                            Go to Cart
+                                            Checkout
                                         </button>
                                     </Link>
                                 </div>

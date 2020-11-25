@@ -17,12 +17,14 @@
     padding: 16px;
     text-align: center;
     font-family: 'Open Sans', serif;
+    
 }
 
-.modal-inner h3{
+.modal-inner h3, .modal-inner h4{
     margin: 10px auto;
     padding: 0;
     font-family: 'Open Sans', serif;
+    font-weight: 400;
 }
 
 .modal-image {
@@ -40,6 +42,7 @@
     background: white;
     color: #7577fa;
     font-family: 'Open Sans', serif;
+    
 }
 
 
