@@ -11,7 +11,7 @@ class ProductProvider extends Component {
     state ={
         products: [],
         detailProduct: detailProduct,
-        cart: [],
+        cart: [], 
         modalOpen: false,
         modalProduct: detailProduct,
         cartSubtotal: 0,
@@ -30,7 +30,12 @@ class ProductProvider extends Component {
             }
             this.setState({products: fetchedProducts})        
          })
+        let data = localStorage.getItem('myProduct');
+        data = JSON.parse(data);
         this.setProducts();
+        this.setState(()=>{
+            return{detailProduct: data}
+        })
     }
     setProducts = () => {
         let tempProducts = []
@@ -46,11 +51,14 @@ class ProductProvider extends Component {
 
     getProductID = (id) => {
         const product = this.state.products.find(item => item.id === id)
+        localStorage.setItem('myProduct', JSON.stringify(product))
+        
         return product
     }
     handleDetail = (id) => {
         const product = this.getProductID(id);
         this.setState(() => {
+            
             return {detailProduct: product}
         })
         
