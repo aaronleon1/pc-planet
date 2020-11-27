@@ -108,6 +108,13 @@
     transform: scale(1.04);
 }
 
+@media screen and (max-width: 1300px) {
+    .product-cards-wrapper{
+        width: 55%;
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .ProductCards{
         flex-direction: column;

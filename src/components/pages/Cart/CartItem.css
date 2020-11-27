@@ -1,7 +1,7 @@
 .item-row{
     display: flex;
     margin: 1rem auto;
-    background-color: white;
+    background-color:	#DCDCDC;
     justify-content: space-evenly ;
     border-radius: 16px;
     align-items: center;
@@ -43,15 +43,6 @@
 }
 
 
-.decrement-btn:hover{
-    font-size: 1.2rem;
-    background: #eed202;
-}
-
-.increment-btn:hover{
-    font-size: 1.2rem;
-    background: #4BB543;
-} 
 
 
 .fa-times{
