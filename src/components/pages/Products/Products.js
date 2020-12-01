@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import './Products.css'
+import NewHomepage from '../NewHomepage/NewHomepage'
 import {Link} from 'react-router-dom'
 
 
@@ -9,7 +10,14 @@ const Products = () => {
         window.scrollTo(0, 0)
       }, [])
     return (
-        <div className='products-wrapper'> 
+       <NewHomepage />
+    )
+}
+
+export default Products
+
+/*
+ <div className='products-wrapper'> 
             <div className='product-head'>
                 <h1>Products</h1>
             </div>
@@ -48,7 +56,4 @@ const Products = () => {
                 </div>  
             </div>
         </div>
-    )
-}
-
-export default Products
+*/

@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import HeroSlider from '../../../components/UI/Slider/Slider'
 import FeaturedProducts from './FeaturedProducts'
+import HomePageLinks from '../../../components/HomePageLinks/homePageLinks'
+import NewHomePage from '../../../components/pages/NewHomepage/NewHomepage'
 
 
 class HomePage extends Component {
@@ -12,7 +14,7 @@ class HomePage extends Component {
         return(
             <div className='home-page'>
                 <HeroSlider />
-                <FeaturedProducts />
+                <HomePageLinks />
             </div>
         )
     }
