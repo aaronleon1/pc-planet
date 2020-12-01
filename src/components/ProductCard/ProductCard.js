@@ -11,7 +11,7 @@ class ProductCard extends Component {
 
         return(
             <div className='card-wrapper'>
-                <ProductConsumer>
+                <ProductConsumer> 
                 {value => (
                 <div className='product' onClick={() => value.handleDetail(id)}>
                         <Link to='/details' >

@@ -3,6 +3,7 @@ import HeroSlider from '../../../components/UI/Slider/Slider'
 import FeaturedProducts from './FeaturedProducts'
 import HomePageLinks from '../../../components/HomePageLinks/homePageLinks'
 import NewHomePage from '../../../components/pages/NewHomepage/NewHomepage'
+import TodaysDeal from '../../../components/TodaysDeal/TodaysDeal'
 
 
 class HomePage extends Component {
@@ -14,6 +15,7 @@ class HomePage extends Component {
         return(
             <div className='home-page'>
                 <HeroSlider />
+                <TodaysDeal />
                 <HomePageLinks />
             </div>
         )
