@@ -1,5 +1,7 @@
 import React from 'react'
 import './TodaysDeal.css'
+import ExtraDeal from './ExtraDeal'
+import {ProductConsumer} from '../context'
 
 
 function TodaysDeal(){
@@ -41,18 +43,20 @@ function TodaysDeal(){
                         </ul>
                     </div>
                     <div className='deal-more'>
-                        <h2 style={{fontWeight: '400'}}>More Like this</h2>
+                        <h2 style={{fontWeight: '400'}}>More Like This</h2>
                         <div className='extra-deal-wrapper'>
-                            <div className='extra-deal'>
-                                <img src={require('../../../public/assets/amd5600xt.jpg')} className='extra-deal-img' alt='deal' />
-                            </div>
-                            <div className='extra-deal'>
-                                <img src={require('../../../public/assets/amd5700xt.jpg')} className='extra-deal-img' alt='deal' />
-                            </div>
-                            <div className='extra-deal'>
-                                <img src={require('../../../public/assets/rtx2060.jpg')} className='extra-deal-img' alt='deal' />
-                            </div>
+                        <ProductConsumer>
+                        {value =>{
+                            return value.products.slice(3,6).map( prod => {
+                                return <ExtraDeal key={prod.id}
+                                    prod={prod}  
+                                    />
+                            })
+                        }}
+                        </ProductConsumer>
                         </div>
+                        
+                        
                         
                     </div>
                 </div>
