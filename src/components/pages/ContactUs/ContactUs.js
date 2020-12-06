@@ -7,33 +7,22 @@ function ContactUs () {
 		window.scrollTo(0, 0)
 	  }, [])
     return (
-        <div className='contact-wrapper'>
-            <form className="contact">
-					<p>
-						<label>Name</label>
-						<input type="text" placeholder="Name" name="name" />
-					</p>
-					<p>
-						<label>Company (if applicable)</label>
-						<input type="text" placeholder="Company" name="company" />
-					</p>
-					<p>
-						<label>E-mail Address</label>
-						<input type="email" placeholder="E-mail Address" name="email" />
-					</p>
-					<p>
-						<label>Subject</label>
-						<input type="text" placeholder="Subject" name="subject" />
-					</p>
-					<p class ="full">
-						<label>Message</label>
-						<textarea placeholder="Message" name ="message"  rows="5"></textarea>
-					</p>
-					<p class ="full"> 
-						<button className="submit">Submit</button>
-					</p>
-					
-				</form>
+        <div className='form-container' >
+            <div className="form-heading" style={{background: '#fff'}}>
+                <h1 style={{fontWeight: '400'}}>Questions or concerns?</h1>
+                <h2 style={{fontWeight: '400', paddingTop: '16px'}}>Drop a message here and we will get back to you in two business days.</h2>
+            </div>
+            <div className="form-body" direction="column" style={{background: '#fff'}}>
+                <form>
+                    <input className='top-inputs' type='text' placeholder='Subject' style={{fontSize: '20px', margin: '8px 0', padding: '16px', background: 'transparent', outline: 'none', border: 'none', borderBottom: '1px solid black'}}/>
+                    <input className='top-inputs' type='email' placeholder='Email Address'  style={{fontSize: '20px', margin: '8px 0', padding: '16px', background: 'transparent', outline: 'none', border: 'none', borderBottom: '1px solid black'}}/>
+                    <textarea className='bottom-input' type='text' placeholder='Message'  style={{fontSize: '20px', fontFamily: 'Open Sans', fontWeight: '500', width: '100%', margin: '8px 0', paddingLeft: '16px', background: 'transparent', outline: 'none', border: 'none', borderBottom: '1px solid black'}}/>
+                    <center>
+                    <input type='submit' placeholder='submit' className='form-submit'/>
+                    </center>
+                    
+                </form>
+            </div>
         </div>
     )
 }
