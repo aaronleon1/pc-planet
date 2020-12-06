@@ -1,24 +1,31 @@
 .home-cards{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 100%;
 }
 
 .home-cards-wrapper{
-    width:90%;
+    width:100%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    background: #f4f5f7;
 }
 
 .home-card{
     display: flex;
     flex-direction: column;
-    width: 29%;
-    height: 350px;
-    border: 1px solid black;
-    margin: 30px;
+    width: 32%;
+    height: 300px;
+    margin: 16px 1%;
     position: relative; 
+}
+.home-card:last-of-type{
+    margin-right: 0;
+}
+.home-card:first-of-type{
+    margin-left: 0;
 }
 
 .home-card a{
@@ -47,7 +54,6 @@
     text-shadow: 6px 6px 4px black ;
 }
 .home-card:hover{
-    transform: scale(1.01);
     cursor: pointer;
     
 }
@@ -59,6 +65,7 @@
     }
     .home-card{
         width: 100%;
-        margin: 15px;
+        margin: 8px 0;
+        padding: 0;
     }
 }

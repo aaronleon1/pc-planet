@@ -47,35 +47,3 @@ function HeroSlider() {
 
 
 export default HeroSlider
-/*
-class HeroSlider extends Component {
-    
-    render() {
-        const settings = {
-            dots: true,
-            fade: true,
-            autoplay: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            arrows: true,
-            slidesToScroll: 1,
-            className: 'slides'
-        }
-        return(
-            <div className='slider'>
-                <Slider {...settings}>
-                    {banners.map((photo, index) =>{
-                        return(
-                            <div key={index}>
-                                <img width='100%' height='100%'src={require(`../../../../public/assets/${photo.imgLocation}.png`)} alt={photo.imgName} />
-                            </div>
-                        )
-                    })}
-
-                </Slider>
-            </div>
-        )
-    }
-}
-*/

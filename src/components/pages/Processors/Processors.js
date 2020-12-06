@@ -16,6 +16,9 @@ class Processors extends Component {
                 <div className='product-head'>
                     <h1>Processors</h1>
                 </div>
+                <div className='product-banner'>
+                    <img src={require('../../../../public/assets/cpuBanner.jpg')} alt='catergory banner' />
+                </div>
                 <div className='product-cards-wrapper'>
                 <ProductConsumer>
                     {value =>{

@@ -17,6 +17,9 @@ class GraphicsCards extends Component {
                 <div className='product-head'>
                     <h1>Graphics Cards</h1>
                 </div>
+                <div className='product-banner'>
+                    <img src={require('../../../../public/assets/gpuBanner.jpg')} alt='catergory banner' />
+                </div>
                 <div className='product-cards-wrapper'>
                 <ProductConsumer>
                     {value =>{

@@ -16,7 +16,7 @@ const footer = () => {
                         <p><i className="fas fa-phone">: </i> 425-906-4377</p>
                     </li>
                     <li>
-                        <p><i className="fas fa-envelope">: </i> cs@pcplanet.com</p>
+                        <p><i className="fas fa-envelope">: </i> cs@pcplanet.xyz</p>
                     </li> 
                    
                     <li className='footer-list social-links'>
