@@ -1,8 +1,8 @@
 import React from 'react'
-import './NewHomepage.css'
+import './NewProductsPage.css'
 import {Link} from 'react-router-dom'
 
-function newHomePage() {
+function NewProductsPage() {
     return(
         <div className='newPage'>
             <div className='newPage-wrapper'>
@@ -37,4 +37,4 @@ function newHomePage() {
     )
 }
 
-export default newHomePage
+export default NewProductsPage

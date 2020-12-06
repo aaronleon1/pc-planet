@@ -1,0 +1,21 @@
+.ram-bestseller{
+    width: 90%;
+    margin: 0 auto;
+    background-image: url(../../../public/assets/bannerBackground.jpg);
+    background-repeat: repeat-x;
+    display: block;
+}
+
+.bestseller-img{
+   
+    vertical-align: middle;
+    height: 50px;
+    
+}
+
+@media (max-width: 1366px) {
+    .bestseller-img{
+        width: 100%;
+        object-fit: contain;
+    }
+}

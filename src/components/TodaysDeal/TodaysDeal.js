@@ -55,10 +55,8 @@ function TodaysDeal(){
                         }}
                         </ProductConsumer>
                         </div>
-                        
-                        
-                        
                     </div>
+                    
                 </div>
             </div>
         </div>

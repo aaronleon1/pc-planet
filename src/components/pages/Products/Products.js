@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import './Products.css'
-import NewHomepage from '../NewHomepage/NewHomepage'
+import NewProductsPage from '../NewProductsPage/NewProductsPage'
 import {Link} from 'react-router-dom'
 
 
@@ -10,7 +10,7 @@ const Products = () => {
         window.scrollTo(0, 0)
       }, [])
     return (
-       <NewHomepage />
+       <NewProductsPage />
     )
 }
 
