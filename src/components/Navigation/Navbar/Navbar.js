@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Button from '../../Button/Button'
+
 import './Navbar.css'
 import Dropdown from '../Navbar/Dropdown/Dropdown'
 import {Link} from 'react-router-dom'
@@ -76,7 +76,7 @@ const Navbar = () => {
                 </li>
                 
             </ul>
-            <Button/>
+            
         </nav>
     )
 }
