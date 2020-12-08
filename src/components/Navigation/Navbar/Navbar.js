@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import NavigationItems from '../NavigationItems/NavigationItems'
 import Button from '../../Button/Button'
 import './Navbar.css'
 import Dropdown from '../Navbar/Dropdown/Dropdown'
@@ -60,11 +59,22 @@ const Navbar = () => {
                     Sign Up
                     </button>
                 </li>
-                <li className='nav-item'>
-                    <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
+                <li className='nav-item' >
+                    <Link to='' className='nav-links' onClick={closeMobileMenu} >
+                    <i class="fas fa-search"></i>
+                    </Link>
+                </li>
+                <li className='nav-item' >
+                    <Link to='/cart' className='nav-links' onClick={closeMobileMenu} >
                         <i className='fas fa-shopping-cart' />
                     </Link>
                 </li>
+                <li className='nav-item' >
+                    <Link to='' className='nav-links' onClick={closeMobileMenu} >
+                        <i class="far fa-user"></i>
+                    </Link>
+                </li>
+                
             </ul>
             <Button/>
         </nav>
