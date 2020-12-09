@@ -2,6 +2,7 @@ import React from 'react'
 import './TodaysDeal.css'
 import ExtraDeal from './ExtraDeal'
 import {ProductConsumer} from '../context'
+import {Link} from 'react-router-dom'
 
 
 function TodaysDeal(){
@@ -13,7 +14,7 @@ function TodaysDeal(){
                     <img src={require('../../../public/assets/amd5700.jpg')} alt='amd 5700'></img>
                 </div>
                 <div className='deal-details'>
-                    <div className='deal-name'><h1>AMD Radeon 5700 XT</h1></div>
+                    <div className='deal-name'><h1>AMD Radeon 5700</h1></div>
                     <div className='deal-price'>
                         <h2 style={{textDecoration: 'line-through', color: '#B8B8B8', fontWeight: '300'}}>
                             $350
@@ -21,6 +22,20 @@ function TodaysDeal(){
                         <h2 style={{paddingLeft: '16px', fontWeight: '300'}}>
                             $300
                         </h2>
+                    </div>
+                    <div className='cta-links'>
+                        <Link to='/products' className='all-products-button'>View all Products <i class="fas fa-arrow-right"></i></Link>
+                        <ProductConsumer>
+                            {(value) =>   
+                                {
+                                    const {addToCart} = value;
+                                    return <button className='home-add-to-cart' style={{marginLeft: '8px'}} onClick={() => {value.addToCart(3); value.openModal(3)}}>Add to Cart  <i class="fas fa-cart-plus"></i></button>
+                                    
+                                } 
+                            }
+                        
+                        </ProductConsumer>
+                        
                     </div>
                     <div className='deal-desc'>
                         <h2>Details:</h2>
@@ -55,6 +70,7 @@ function TodaysDeal(){
                         }}
                         </ProductConsumer>
                         </div>
+                        
                     </div>
                     
                 </div>

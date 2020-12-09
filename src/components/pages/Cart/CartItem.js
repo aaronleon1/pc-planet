@@ -10,10 +10,10 @@ function CartItem({item, value}){
                 <img src={productImage} style={{width: '8rem', height: '8rem', padding: '0.5rem 0'}} alt={productName} />
             </div>
             <div className='item-name'>
-                <h3>{productName}</h3>
+                <p>{productName}</p>
             </div>
             <div className='item-price'>
-                <h3>Price: ${productPrice}</h3>
+                <p>Price: ${productPrice}</p>
             </div>
             <div className='cart-btn-container'>
                 <div className='inner-cart-btns'>
@@ -28,7 +28,7 @@ function CartItem({item, value}){
                 <i className='fas fa-times'/>
             </div>
             <div className='item-total'>
-                <strong> Item Total: ${total}</strong>
+                <p> Item Total: ${total}</p>
             </div>
         </div> 
     )

@@ -29,7 +29,7 @@
 
   
   
-  .form-submit{
+  .form-submit{ 
     display: block;
     height: 80px; 
     width: 100%;
@@ -43,6 +43,7 @@
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
+    cursor: pointer;
   }
   .form-submit:hover{
     background-position: left bottom;
@@ -50,12 +51,22 @@
   }
 
   @media (max-width: 960px){
-      .contact-wrapper{
-          width: 75%
+      .form-container{
+        margin: 32px auto;
+        height: 70vh;
+        
       }
-      .contact-wrapper form{
+      .form-container form{
           display: flex;
           flex-direction: column;
+      }
+
+      .form-heading h2{
+        padding-top: 0;
+      }
+      
+      .bottom-input{
+        height: 80px;
       }
   }
   

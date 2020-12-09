@@ -1,7 +1,7 @@
 .item-row{
     display: flex;
     margin: 1rem auto;
-    background-color:	#DCDCDC;
+    background-color:	#ECECEC;
     justify-content: space-evenly ;
     border-radius: 16px;
     align-items: center;
@@ -11,10 +11,14 @@
 
 .item-image, .item-name, .item-price, .item-remove, .item-total{
     margin: 2rem 1rem;
+    font-size: 18px;
+    font-weight: 400; 
 }
 
 .item-name{
-    width: 150px;
+    width: 8rem;
+    text-align: center;
+    
 }
 
 .item-remove, .item-total{

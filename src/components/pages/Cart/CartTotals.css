@@ -1,39 +1,29 @@
 .cartTotals-container{
-    text-align: right;
-    margin: 1rem 1rem 1rem auto;
+    text-align: left;
+    max-width: 20%;
     font-size: 20px;
-    width: 300px;
+    margin: 1rem 0 1rem 15%;
 }
 
-.clear-cart{
-    padding: 16px 24px;
-    color: #f89858;
-    background: transparent;
-    border: 3px solid #f89858;
-    border-radius: 16px;
-    cursor: pointer;
+.subtotal-container, .tax-container, .total-container{
+    text-align: left;
+    font-weight: 400;
 }
 
-.clear-cart:hover{
-    background: #B33A3A;
-    color: black;
-    border: 3px solid black;
-    font-weight: 800;
+.tax-container{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
-
 
 
 @media (max-width: 960px) {
     .cartTotals-container{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: left;
+        
         text-align: left;
+        width: 80%
     }
 
-    .clear-cart{
-        width: 95%;
-        margin: 1rem;
-    }
+    
 }

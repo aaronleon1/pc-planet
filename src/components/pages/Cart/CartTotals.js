@@ -55,13 +55,13 @@ function CartTotals({value}){
             <>
                
                 <div className='subtotal-container'>
-                    <h4>Subtotal: ${cartSubtotal}</h4>
+                    <p>Subtotal: ${cartSubtotal}</p>
                 </div>
                 <div className='tax-container'>
-                    <h4>Tax: ${cartTax}</h4>
+                    <p>Tax: ${cartTax}</p>
                 </div>
                 <div className='total-container'>
-                    <h4>Total: ${cartTotal}</h4>
+                    <p>Total: ${cartTotal}</p>
                 </div>
                 <div ref={paypalRef} />
             </>
