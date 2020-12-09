@@ -34,7 +34,7 @@
     list-style: none;
     text-align: center;
     width: 70vw;
-    justify-content: end;
+    justify-content: end ;
     margin-right: 2rem;
   }
   
@@ -64,7 +64,7 @@
     display: none;
   }
   
-  .menu-icon {
+  .menu-icon, .user-icon, .cart-icon {
     display: none;
   }
   
@@ -81,6 +81,7 @@
     .nav-menu {
       display: flex;
       flex-direction: column;
+      justify-content: start;
       width: 100%;
       height: 90vh;
       position: absolute;
@@ -99,6 +100,7 @@
       z-index: 2;
       padding: 20px 0 0 0;
     }
+    
   
     .nav-links {
       text-align: center;
@@ -127,10 +129,31 @@
       display: block;
       position: absolute;
       top: 0;
+      left: 0;
+      transform: translate(100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+     .cart-icon{
+      display: block;
+      position: absolute;
+      top: 0;
       right: 0;
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
+      color: #fff
+    }
+    .user-icon{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 11%;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #fff;
     }
   
     .fa-times {
@@ -148,7 +171,7 @@
       border: none;
       cursor: pointer;
       width: 100%;
-      background: #4ad9e4;
+      background: transparent;
       text-decoration: none;
       color: #fff;
       font-size: 1.5rem;
@@ -161,6 +184,9 @@
     }
   
     #sign-up-btn {
+      display: none;
+    }
+    .action-links{
       display: none;
     }
   }

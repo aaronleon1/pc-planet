@@ -28,12 +28,18 @@ const Navbar = () => {
 
     return (
         <nav className='navbar'>
-            <Link to='/' className='navbar-logo'>
-                PCPlanet<i className="fas fa-memory" />
-            </Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>
+            <Link to='/' className='navbar-logo'>
+                PCPlanet<i className="fas fa-memory" />
+            </Link>
+            <Link to='/cart' className='cart-icon' onClick={closeMobileMenu} >
+                <i className='fas fa-shopping-cart' />
+            </Link>
+            <Link to='' className='user-icon' onClick={closeMobileMenu} >
+                <i class="far fa-user"></i>
+            </Link>
             <ul className={click ? 'nav-menu active': 'nav-menu'}>
                 <li className='nav-item'>
                     <Link to='/' className='nav-links' onClick={closeMobileMenu}>
@@ -54,26 +60,23 @@ const Navbar = () => {
                         Contact Us
                     </Link>
                 </li>
-                <li className='nav-item'>
-                    <button className='nav-links-mobile' onClick={closeMobileMenu}>
-                    Sign Up
-                    </button>
-                </li>
-                <li className='nav-item' >
+                
+                <li className='nav-item action-links' >
                     <Link to='' className='nav-links' onClick={closeMobileMenu} >
                     <i class="fas fa-search"></i>
                     </Link>
                 </li>
-                <li className='nav-item' >
-                    <Link to='/cart' className='nav-links' onClick={closeMobileMenu} >
-                        <i className='fas fa-shopping-cart' />
-                    </Link>
-                </li>
-                <li className='nav-item' >
+                <li className='nav-item action-links' >
                     <Link to='' className='nav-links' onClick={closeMobileMenu} >
                         <i class="far fa-user"></i>
                     </Link>
                 </li>
+                <li className='nav-item action-links' >
+                    <Link to='/cart' className='nav-links' onClick={closeMobileMenu} >
+                        <i className='fas fa-shopping-cart' />
+                    </Link>
+                </li>
+                
                 
             </ul>
             
