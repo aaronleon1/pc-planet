@@ -29,7 +29,7 @@ function TodaysDeal(){
                             {(value) =>   
                                 {
                                     const {addToCart} = value;
-                                    return <button className='home-add-to-cart' style={{marginLeft: '8px'}} onClick={() => {value.addToCart(3); value.openModal(3)}}>Add to Cart  <i class="fas fa-cart-plus"></i></button>
+                                    return <button className='home-add-to-cart'  onClick={() => {value.addToCart(3); value.openModal(3)}}>Add to Cart  <i class="fas fa-cart-plus"></i></button>
                                     
                                 } 
                             }

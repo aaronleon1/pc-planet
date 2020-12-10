@@ -87,6 +87,13 @@
     height: 50%
 }
 
+.product-card-heading{
+    display: flex; 
+    margin: 8px 0; 
+    max-width: 100%;
+    
+}
+
 .product-name {
     margin: 15px 0 0 0;
     font-size: 20px;

@@ -18,9 +18,9 @@ class ProductCard extends Component {
                             <img src={productImage} alt={productName} className='product-image'/>
                         </Link>
                         <div className='product-card-details'>
-                            <div className='product-card-heading' style={{display: 'flex', marginTop: '8px', height: '60px'}}>
+                            <div className='product-card-heading' >
                                 <img src={logoImage} alt='logo image' className='logo-image'/>
-                                <p style={{ verticalAlign: 'top', marginLeft: '8px'}}>
+                                <p style={{marginLeft: '8px'}}>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
