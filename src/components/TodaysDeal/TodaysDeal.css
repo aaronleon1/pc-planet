@@ -1,14 +1,14 @@
 .deal-div{
-    width: 100%;
+    width: 75%;
     height: 100%;
-    margin: 30px 0;
+    margin: 30px auto;
 }
 
 .deal-wrapper{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 

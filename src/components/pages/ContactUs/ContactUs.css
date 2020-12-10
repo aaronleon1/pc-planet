@@ -53,7 +53,7 @@
   @media (max-width: 960px){
       .form-container{
         margin: 32px auto;
-        height: 70vh;
+        height: 70%;
         
       }
       .form-container form{

@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 
 class ProductCard extends Component {
     render() { 
-        const {id, productName, productImage, productPrice, inCart} = this.props.prod
+        const {id, productName, productImage, productPrice, logoImage} = this.props.prod
 
         return(
             <div className='card-wrapper'>
@@ -17,12 +17,25 @@ class ProductCard extends Component {
                         <Link to='/details' >
                             <img src={productImage} alt={productName} className='product-image'/>
                         </Link>
-                        <h2 className='product-name'>{productName}</h2>
-                        <p className='product-price'>${productPrice}</p>
-                        <button className='cart-btn' disabled={inCart ? true : false}
-                        onClick={() => {
-                        value.addToCart(id) 
-                        value.openModal(id)}}>{inCart ? 'In Cart' : <><i className='fas fa-cart-plus'/> Add To Cart</>}</button>
+                        <div className='product-card-details'>
+                            <div className='product-card-heading' style={{display: 'flex', marginTop: '8px', height: '60px'}}>
+                                <img src={logoImage} alt='logo image' className='logo-image'/>
+                                <p style={{ verticalAlign: 'top', marginLeft: '8px'}}>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> ({Math.floor(Math.random() * 1000)})
+                            </p>
+                            </div>
+                            
+                            <h2 className='product-name' >{productName}</h2>
+                            <div className='price-view-details'>
+                                <p className='product-price'>${productPrice}</p>
+                                <Link to='/details' className='view-details'><p>View Details</p></Link>
+                            </div>
+                            
+                        </div>
                     </div>
                 )}
                 </ProductConsumer>

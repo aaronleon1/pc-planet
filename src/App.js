@@ -22,6 +22,7 @@ class App extends Component {
     return (
           <>
             <Navbar />
+            
             <Switch>
               <Route path='/' exact component={HomePage} />
               <Route path='/products'  component={Products} />
@@ -34,6 +35,7 @@ class App extends Component {
               <Route component={Default} />
             </Switch>
             <Modal />
+          
             <Footer />
             <Disclaimer />
           </>
