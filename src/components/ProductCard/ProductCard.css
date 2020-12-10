@@ -95,6 +95,8 @@
 }
 .logo-image{
     object-fit: contain;
+    height:60px;
+    width:90px;
 }
 .product-price, .product-price p{
     font-size: 18px;
@@ -152,9 +154,9 @@
     .product{
         flex-direction: column;
         width: 100%;
-        margin: 30px auto auto auto;
+        margin: 15px auto;
         height: 500px;
-        position: relative;
+        
     }
     .product a{
         
