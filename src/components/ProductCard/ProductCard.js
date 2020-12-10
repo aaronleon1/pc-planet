@@ -29,7 +29,7 @@ class ProductCard extends Component {
                             </p>
                             </div>
                             
-                            <h2 className='product-name' >{productName}</h2>
+                            <h2 className='product-name' style={{marginLeft: '0'}}>{productName}</h2>
                             <div className='price-view-details'>
                                 <p className='product-price'>${productPrice}</p>
                                 <Link to='/details' className='view-details'><p>View Details</p></Link>
