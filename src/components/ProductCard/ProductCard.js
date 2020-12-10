@@ -25,7 +25,7 @@ class ProductCard extends Component {
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i> ({Math.floor(Math.random() * 1000)})
+                                <i class="fas fa-star"></i> ({Math.floor(Math.random() * 1000)+1})
                             </p>
                             </div>
                             
