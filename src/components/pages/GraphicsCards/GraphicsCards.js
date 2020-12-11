@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../ProductCard/ProductCard'
+import '../Products/Products.css'
 import ProductCard from '../../ProductCard/ProductCard';
 import {ProductConsumer} from '../../context'
 
