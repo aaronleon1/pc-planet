@@ -30,7 +30,7 @@
   
   
   .form-submit{ 
-    display: block;
+    display: block; 
     height: 80px; 
     width: 100%;
     outline: none;
@@ -39,7 +39,7 @@
     font-weight: 400;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 24px;
-    background: linear-gradient(to right, #6668f4 50%, #1E1E1E 50%);
+    background: linear-gradient(to right, #45a29e 50%, #1E1E1E 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;

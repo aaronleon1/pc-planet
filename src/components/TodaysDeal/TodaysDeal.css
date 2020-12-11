@@ -81,13 +81,19 @@
     padding: 16px 32px;
     border: none;
     outline: none;
-    background:  #7577fa;
     color: #fff;
     text-decoration: none;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 400;
-    
-    
+    background: linear-gradient(to right, #45a29e 50%, #1E1E1E 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+.all-products-button:hover{
+    background-position: left bottom;
+    cursor: pointer;
 }
 
 .home-add-to-cart{
@@ -95,12 +101,19 @@
     margin-left: 8px;
     border: none;
     outline: none;
-    background:  #7577fa;
     color: #fff;
     text-decoration: none;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
+    background: linear-gradient(to right, #45a29e 50%, #1E1E1E 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+.home-add-to-cart:hover{
+    background-position: left bottom;
     cursor: pointer;
 }
 
