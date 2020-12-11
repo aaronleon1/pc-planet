@@ -10,13 +10,16 @@
     justify-content: left;
     margin: 0 auto;
     flex-wrap: wrap;
-    color: #66FCF1;
+    color: #66FCF1; 
 }
 
 .newsletter {
     margin: 30px 2rem;
     padding: 5px 0;
     
+}
+.newsletter h3{
+    font-weight: 400;
 }
 
 .newsletter input{
@@ -36,6 +39,9 @@
 
 ul {
     list-style-type: none;
+}
+ul h3{
+    font-weight: 400;
 }
 
 li {
