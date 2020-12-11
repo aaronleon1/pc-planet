@@ -13,11 +13,11 @@ class RAM extends Component {
         return(
             
             <div className='product-wrapper'> 
-                <div className='product-head'>
-                    <h1>RAM</h1>
-                </div>
                 <div className='product-banner'>
                     <img src={require('../../../../public/assets/ramBanner.jpg')} alt='catergory banner' />
+                </div>
+                <div className='product-head'>
+                    <h1>RAM</h1>
                 </div>
                 <div className='product-cards-wrapper'>
                 <ProductConsumer>

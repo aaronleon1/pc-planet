@@ -8,16 +8,16 @@
 .product-head{
     width: 75%;
     margin: 0 auto;
-    text-align: center;
-    background-color: #1E1E1E;
-    border: none;
+    text-align: left;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
     padding: 0;
    
 }
 .product-head h1{
     margin: 0;
     padding: 1rem;
-    color:  #7577fa;
+    color:  #1f2833; 
 }
 
 .product-banner{
@@ -82,13 +82,17 @@
 @media (max-width: 960px){
     .product-banner{
         width: 100%;
-        height: 18vh;
+        height: 14vh;
+        margin: 0 auto;
     }
     .product-banner img{
         object-fit: fill;
         max-width: 100%;
         height: 100%;
+        margin: 0 auto;
     }
-
+    .product-head{
+        width: 100%;
+    }
     
 }

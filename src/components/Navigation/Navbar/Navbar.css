@@ -1,6 +1,6 @@
 
 .navbar {
-    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100% );
+    background: #0b0c10;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
   }
   
   .navbar-logo {
-    color: #fff;
+    color:#66FCF1;;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -45,7 +45,7 @@
   }
   
   .nav-links {
-    color: white;
+    color: #66FCF1;
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
@@ -57,7 +57,7 @@
   }
   
   .fa-bars {
-    color: #fff;
+    color:#66FCF1;
   }
   
   .nav-links-mobile {
@@ -143,7 +143,7 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
-      color: #fff
+      color: #66FCF1;
     }
     .user-icon{
       display: block;
@@ -153,11 +153,11 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
-      color: #fff;
+      color: #66FCF1;
     }
   
     .fa-times {
-      color: #fff;
+      color: #66FCF1;
       font-size: 2rem;
     }
   

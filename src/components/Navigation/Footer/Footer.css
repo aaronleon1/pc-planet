@@ -1,5 +1,5 @@
 .footer-wrapper {
-    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100% );
+    background: #0b0c10;
     width: 100%;
     display: block;
     margin-top: auto;
@@ -10,7 +10,7 @@
     justify-content: left;
     margin: 0 auto;
     flex-wrap: wrap;
-    color: white;
+    color: #66FCF1;
 }
 
 .newsletter {
