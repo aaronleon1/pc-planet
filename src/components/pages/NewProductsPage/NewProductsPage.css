@@ -1,13 +1,13 @@
 .newPage{
-    width: 100%;
+    width: 60%;
     height: 100%;
-    margin: 40px 0;
+    margin: 20px auto;
 }
 
 .newPage-wrapper{
-    width:90%;
+    width:100%;
     height: 100%;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -15,37 +15,32 @@
 .card{
     display: flex;
     flex-direction: column;
-    width: 29%;
-    height: 450px;
-    border: 1px solid black;
-    margin: 30px;
-    position: relative; 
+    width: 22%;
+    height: 300px;
+    
+    margin: auto;
+
+     
 }
 
-.card a{
+.card a{ 
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 .card-img{
     width: 100%;
     height: 100%;
     object-fit: fill;
-    
 }
 
-.card-text{
-    position: absolute;  
-    left: 50%;                        
-    top: 50%;                         
-    transform: translate(-50%, -80%);
-    color: white;
-    font-size: 35px;
-    z-index: 3;
+.card-text{                        
+    font-size: 18px;
+    font-weight: 600;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    width: 90%;
+    width: 100%;
     text-align: center;
-    text-shadow: 6px 6px 4px black ;
+    text-transform: uppercase;
 }
 .card:hover{
     transform: scale(1.01);
@@ -54,12 +49,16 @@
 }
 
 @media (max-width: 1366px){
-    
+    .newPage{
+        width: 98%
+    }
     .newPage-wrapper{
-        width: 98%;
+        width: 100%;
     }
     .card{
-        width: 100%;
-        margin: 15px;
+        width: 50%;
+        height: 300px;
+        margin: 15px 0;
+
     }
 }
