@@ -51,7 +51,7 @@
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     width: 90%;
     text-align: center;
-    text-shadow: 6px 6px 4px black ;
+    text-shadow: 2px 2px 8px black;
 }
 .home-card:hover{
     cursor: pointer;
@@ -60,8 +60,8 @@
 
 @media (max-width: 960px){
     
-    .home-card-wrapper{
-        width: 98%;
+    .home-cards{
+        width: 100%;
     }
     .home-card{
         width: 100%;

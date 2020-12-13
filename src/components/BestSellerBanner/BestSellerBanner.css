@@ -7,13 +7,14 @@
 }
 
 .bestseller-img{
-   
     vertical-align: middle;
-    height: 50px;
-    
+    height: 50px
 }
 
-@media (max-width: 1366px) {
+@media screen and (max-width: 960px) {
+    .ram-bestseller{
+        width: 100%;
+    }
     .bestseller-img{
         width: 100%;
         object-fit: contain;
