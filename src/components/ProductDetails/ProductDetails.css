@@ -153,8 +153,8 @@
         height: auto;
     }
     .recommended-review-wrapper{
-      max-width: 100%;
-      height: 500px;
+      width: 100%;
+      height: 400px;
       margin: 0;
       padding: 0;
     }
