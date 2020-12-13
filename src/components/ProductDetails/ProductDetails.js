@@ -4,17 +4,27 @@ import { Link } from 'react-router-dom'
 import { ProductConsumer } from '../context'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css'; 
+import Carousel from 'react-elastic-carousel';
+import ProductCard from '../ProductCard/ProductCard'
+import '../ProductCard/ProductCard.css'
 
 
 
 
 class ProductDetails extends Component {
     
+    
     componentDidMount() {
         window.scrollTo(0, 0)
       }
       render() {
-        
+            
+        const breakPoints = [
+            { width: 1, itemsToShow: 1 },
+            { width: 550, itemsToShow: 1, itemsToScroll: 2 },
+            { width: 768, itemsToShow: 1 },
+            { width: 1200, itemsToShow: 1 }
+          ];
         return (
             <ProductConsumer>
                 {(value) => {
@@ -35,38 +45,61 @@ class ProductDetails extends Component {
                                                 value.openModal(id)
                                     }}><i className="fas fa-cart-plus" />{inCart ? ' In Cart' : ' Add to Cart'}</button>
                                     <div className='prod-specs'>
-                                    <Tabs >
-                                        <TabList>
-                                            <Tab>Specifications</Tab>
-                                            <Tab>Warranty</Tab>
-                                            <Tab>Shipping</Tab>
-                                        </TabList>
-                                        <TabPanel>
-                                            <ul>
-                                                <li>
-                                                {details.replaceAll("\\n", "\n")}
-                                                </li>    
-                                            </ul>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <ul>
-                                                <li>
-                                                    All products come standard with a 30-Day warranty unless marked otherwise.
-                                                </li>    
-                                            </ul>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <ul>
-                                                <li>5-7 Business Days: $5.99</li>
-                                                <li>2 Days: 14.99</li>
-                                                <li>All orders over $399: Free 2-Day upgrade</li>
-                                            </ul>
-                                        </TabPanel>
-                                    </Tabs>
-                                </div>
+                                        <Tabs >
+                                            <TabList>
+                                                <Tab>Specifications</Tab>
+                                                <Tab>Warranty</Tab>
+                                                <Tab>Shipping</Tab>
+                                            </TabList>
+                                            <TabPanel>
+                                                <ul>
+                                                    <li>
+                                                    {details.replaceAll("\\n", "\n")}
+                                                    </li>    
+                                                </ul>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <ul>
+                                                    <li>
+                                                        All products come standard with a 30-Day warranty unless marked otherwise.
+                                                    </li>    
+                                                </ul>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <ul>
+                                                    <li>5-7 Business Days: $5.99</li>
+                                                    <li>2 Days: 14.99</li>
+                                                    <li>All orders over $399: Free 2-Day upgrade</li>
+                                                </ul>
+                                            </TabPanel>
+                                        </Tabs>
+                                    </div>
                                 </div>
                                 
                             </div>
+                            <div className='recommended-review-wrapper'>
+                                    <Tabs style={{height: '400px'}}>
+                                        <TabList>
+                                            <Tab>Recommended</Tab>
+                                            <Tab>Reviews</Tab>
+                                        </TabList>
+                                        <TabPanel>
+                                            <Carousel breakPoints={breakPoints}>
+                                                {
+                                                
+                                                value.products.sort( () => { return 0.5 - Math.random() } ).slice(0,5).map( prod => {
+                                                        return <ProductCard key={prod.id}
+                                                        prod={prod}  
+                                                        />
+                                                    })
+                                                }
+                                                    
+                                                
+                                            </Carousel>
+                                        </TabPanel>
+                                        <TabPanel></TabPanel>
+                                    </Tabs>
+                                </div>
                         </div>
                            
                     )
