@@ -45,7 +45,7 @@ class ProductDetails extends Component {
                                                 value.openModal(id)
                                     }}><i className="fas fa-cart-plus" />{inCart ? ' In Cart' : ' Add to Cart'}</button>
                                     <div className='prod-specs'>
-                                        <Tabs >
+                                        <Tabs>
                                             <TabList>
                                                 <Tab>Specifications</Tab>
                                                 <Tab>Warranty</Tab>
@@ -78,7 +78,7 @@ class ProductDetails extends Component {
                                 
                             </div>
                             <div className='recommended-review-wrapper'>
-                                    <Tabs style={{height: '400px'}}>
+                                    <Tabs >
                                         <TabList>
                                             <Tab>Recommended</Tab>
                                             <Tab>Reviews</Tab>
