@@ -22,7 +22,7 @@ class ProductDetails extends Component {
             { width: 1, itemsToShow: 1 },
             { width: 550, itemsToShow: 2, itemsToScroll: 2 },
             { width: 768, itemsToShow: 2 },
-            { width: 1200, itemsToShow: 4 }
+            { width: 1200, itemsToShow: 4, itemsToScroll: 4 }
           ];
         return (
             <ProductConsumer>
@@ -86,7 +86,7 @@ class ProductDetails extends Component {
                                             <Carousel breakPoints={breakPoints}>
                                                 {
                                                 
-                                                value.recommendedProducts.sort( () => { return 0.5 - Math.random() } ).map( prod => {
+                                                value.recommendedProducts.sort( () => { return 0.5 - Math.random() } ).slice(0,8).map( prod => {
                                                         return <RecommendedProductCard key={prod.id}
                                                         prod={prod}  
                                                         />
