@@ -35,7 +35,7 @@
 }
 
 .deal-name h1{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .deal-price{
@@ -66,9 +66,9 @@
 }
 
 .extra-deal{
-    width: 80px;
-    width: 80px;
-    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+    margin-left: 8px;
 }
 
 .extra-deal-img{
@@ -135,7 +135,7 @@
     .deal-details{
         border-left: 0px;
         border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        
         padding: 0 0 0 8px;
         width: 98%;
         margin-top: 60px;

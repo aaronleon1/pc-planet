@@ -4,6 +4,7 @@ import FeaturedProducts from './FeaturedProducts'
 import HomePageLinks from '../../../components/HomePageLinks/homePageLinks'
 import TodaysDeal from '../../../components/TodaysDeal/TodaysDeal'
 import BestSellerBanner from '../../../components/BestSellerBanner/BestSellerBanner'
+import LimitedTimeOffers from '../../../components/LimitedTimeOffers/LimitedTimeOffers'
 
 
 class HomePage extends Component {
@@ -16,6 +17,7 @@ class HomePage extends Component {
             <div className='home-page'>
                 <HeroSlider />
                 <TodaysDeal />
+                <LimitedTimeOffers />
                 <BestSellerBanner />
                 <HomePageLinks />
             </div>

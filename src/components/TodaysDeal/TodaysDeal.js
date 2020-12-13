@@ -38,7 +38,7 @@ function TodaysDeal(){
                         
                     </div>
                     <div className='deal-desc'>
-                        <h2>Details:</h2>
+                        <h2 style={{fontWeight: '400'}}>Details:</h2>
                         <ul>
                             <li>
                                 Brand: ASUS 

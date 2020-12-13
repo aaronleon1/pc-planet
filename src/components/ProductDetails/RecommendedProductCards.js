@@ -14,7 +14,7 @@ class RecommendedProductCard extends Component {
             <div className='rec-card-wrapper'>
                 <ProductConsumer> 
                 {value => (
-                <div className='rec-product' onClick={() => value.handleDetail(id)}>
+                <div className='rec-product' onClick={() => {value.handleDetail(id); window.scrollTo(0, 0)}}>
                         <Link to='/details' >
                             <img src={productImage} alt={productName} className='rec-product-image'/>
                         </Link>

@@ -1,0 +1,41 @@
+.limited-deals-wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.limited-deal{
+    width: 100%;
+   height: 100%;
+   margin: 0 auto;
+    
+}
+.limited-deal-img{
+    margin: 0 auto;
+    object-fit: fill;
+    display: block;
+    cursor: pointer;
+}
+
+.thin-img{
+    margin-top: 56px !important;
+}
+
+@media (max-width: 960px){
+    .limited-deals-wrapper{
+        width: 100%;
+        
+
+    }
+    .limited-deal{
+        width: 100%;
+        
+        
+    }
+    .thin-img{
+        margin-top: 0px !important;
+    }
+    .limited-deal-img{
+        object-fit: contain;
+        margin: 0 auto;
+    }
+}
