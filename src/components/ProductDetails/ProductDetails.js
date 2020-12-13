@@ -5,8 +5,7 @@ import { ProductConsumer } from '../context'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css'; 
 import Carousel from 'react-elastic-carousel';
-import ProductCard from '../ProductCard/ProductCard'
-import '../ProductCard/ProductCard.css'
+import RecommendedProductCard from './RecommendedProductCards'
 
 
 
@@ -21,9 +20,9 @@ class ProductDetails extends Component {
             
         const breakPoints = [
             { width: 1, itemsToShow: 1 },
-            { width: 550, itemsToShow: 1, itemsToScroll: 2 },
-            { width: 768, itemsToShow: 1 },
-            { width: 1200, itemsToShow: 1 }
+            { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+            { width: 768, itemsToShow: 2 },
+            { width: 1200, itemsToShow: 4 }
           ];
         return (
             <ProductConsumer>
@@ -87,8 +86,8 @@ class ProductDetails extends Component {
                                             <Carousel breakPoints={breakPoints}>
                                                 {
                                                 
-                                                value.products.sort( () => { return 0.5 - Math.random() } ).slice(0,5).map( prod => {
-                                                        return <ProductCard key={prod.id}
+                                                value.recommendedProducts.sort( () => { return 0.5 - Math.random() } ).map( prod => {
+                                                        return <RecommendedProductCard key={prod.id}
                                                         prod={prod}  
                                                         />
                                                     })

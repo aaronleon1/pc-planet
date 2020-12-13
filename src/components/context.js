@@ -16,7 +16,9 @@ class ProductProvider extends Component {
         modalProduct: detailProduct,
         cartSubtotal: 0,
         cartTax: 0,
-        cartTotal: 0
+        cartTotal: 0,
+        recommendedProducts: [],
+
     }
     componentDidMount() {
         axios.get('https://pc-planet-55aa4.firebaseio.com/products.json')
@@ -28,7 +30,7 @@ class ProductProvider extends Component {
                     prodID: key
                 })
             }
-            this.setState({products: fetchedProducts})        
+            this.setState({products: fetchedProducts, recommendedProducts: [...fetchedProducts]})        
          })
         let data = localStorage.getItem('myProduct');
         data = JSON.parse(data);
@@ -39,13 +41,14 @@ class ProductProvider extends Component {
     }
     setProducts = () => {
         let tempProducts = []
+        
         this.state.products.forEach(item => {
             const singleProduct = {...item};
             tempProducts = [...tempProducts, singleProduct]
             
         })
         this.setState(()=>{
-            return{products: tempProducts}
+            return{products: tempProducts, recommendedProducts: tempProducts}
         })
     }
 
