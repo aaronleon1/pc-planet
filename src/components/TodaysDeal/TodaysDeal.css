@@ -117,19 +117,22 @@
     cursor: pointer;
 }
 
+
+
 @media (max-width: 960px){
     .deal-wrapper{
         flex-direction: column;
     }
 
     .deal-div{
-        width: 100%;
-        margin: 0;
+        width: 98%;
+        margin: 0 auto;
         padding: 0;
     }
     .deal-img{
-        width: 100%;
-        height: 100%;
+        width: 98%;
+        height: 98%;
+        margin: 0 auto;
         padding: 0;
     }
     .deal-details{
