@@ -13,7 +13,7 @@ function HomeProductSlider(){
             {src: 'monitors.jpg', name: 'MONITORS'},
             {src: 'ssds.jpg', name: 'SSDs'},
             {src: 'coolers.jpg', name: 'COOLERS'},
-            {src: 'routers.jpg', name: 'CASES'},
+            {src: 'routers.jpg', name: 'ROUTERS'},
             {src: 'powerSupplys.jpg', name: 'POWER SUPPLIES'},
             {src: 'cases.jpg', name: 'CASES'},
             {src: 'desktops.jpg', name: 'DESKTOPS'},

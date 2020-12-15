@@ -10,6 +10,10 @@ import Footer from './components/Navigation/Footer/Footer'
 import Disclaimer from './components/Navigation/Footer/Disclaimer/Disclaimer'
 import Processors from './components/pages/Processors/Processors';
 import Ram from './components/pages/RAM/Ram';
+import ComputerCases from './components/pages/ComputerCases/ComputerCases'
+import Motherboards from './components/pages/Motherboards/Motherboards'
+import SSDs from './components/pages/SSDs/SSDs'
+import Laptops from './components/pages/Laptops/Laptops'
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import Modal from './components/UI/Modal/Modal'
 import Cart from './components/pages/Cart/Cart'
@@ -30,6 +34,10 @@ class App extends Component {
               <Route path='/graphics-cards'  component={GraphicsCards} />
               <Route path='/processors'  component={Processors} />
               <Route path='/ram'  component={Ram} />
+              <Route path='/computer-cases' component={ComputerCases} />
+              <Route path='/motherboards' component={Motherboards} />
+              <Route path='/ssds' component={SSDs} />
+              <Route path='/laptops' component={Laptops} />
               <Route path='/cart'  component={Cart} />
               <Route path='/details'  component={ProductDetails} />
               <Route component={Default} />

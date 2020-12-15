@@ -35,13 +35,13 @@ function NewProductsPage() {
                         </p>
                 </div>
                 <div className='card'>
-                    <Link to='#'>
+                    <Link to='motherboards'>
                         <img src={require('../../../../public/assets/motherboards.jpg')} alt='' className='card-img'/>
                        
                     </Link> 
                     <p className='card-text'>
                             Motherboards
-                        </p> 
+                    </p> 
                 </div>
                 <div className='card'>
                     <Link to='#'>
@@ -53,7 +53,7 @@ function NewProductsPage() {
                         </p>  
                 </div>
                 <div className='card'>
-                    <Link to='#'>
+                    <Link to='/ssds'>
                         <img src={require('../../../../public/assets/ssds.jpg')} alt='' className='card-img'/>
                         
                     </Link>
@@ -89,7 +89,7 @@ function NewProductsPage() {
                         </p>  
                 </div>
                 <div className='card'>
-                    <Link to='#'>
+                    <Link to='/computer-cases'>
                         <img src={require('../../../../public/assets/cases.jpg')} alt='' className='card-img'/>
                         
                     </Link> 
@@ -107,7 +107,7 @@ function NewProductsPage() {
                         </p>  
                 </div>
                 <div className='card'>
-                    <Link to='#'>
+                    <Link to='/laptops'>
                         <img src={require('../../../../public/assets/laptops.jpg')} alt='' className='card-img'/>
                         
                     </Link>
