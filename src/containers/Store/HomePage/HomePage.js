@@ -5,7 +5,7 @@ import HomePageLinks from '../../../components/HomePageLinks/homePageLinks'
 import TodaysDeal from '../../../components/TodaysDeal/TodaysDeal'
 import BestSellerBanner from '../../../components/BestSellerBanner/BestSellerBanner'
 import LimitedTimeOffers from '../../../components/LimitedTimeOffers/LimitedTimeOffers'
-
+import HomeProductSlider from '../../../components/HomeProductSlider/HomeProductSlider'
 
 class HomePage extends Component {
     componentDidMount() {
@@ -17,8 +17,9 @@ class HomePage extends Component {
             <div className='home-page'>
                 <HeroSlider />
                 <TodaysDeal />
-                <LimitedTimeOffers />
+                <HomeProductSlider />
                 <BestSellerBanner />
+                <LimitedTimeOffers />
                 <HomePageLinks />
             </div>
         )

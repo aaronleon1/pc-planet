@@ -41,33 +41,6 @@
 }
 
 
-.category-wrapper {
-    margin: 2rem;
-}
-
-.category-card{
-    display: block;
-    width: 350px;
-    height: 425px;
-    color: #292f33;
-    box-shadow: 0px 10px 5px #aaaaaa;
-    border: 2px solid #ccc;
-    
-    
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    text-align: center;
-}
-
-
-.category-img {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    max-height: 60%;
-    border-bottom: 2px solid black;
-}
 
 .card-links button{
     padding: 16px;

@@ -60,9 +60,14 @@ class ProductDetails extends Component {
                                             <TabPanel>
                                                 <ul>
                                                     <li>
-                                                        All products come standard with a 30-Day warranty unless marked otherwise.
-                                                    </li>    
+                                                        All products come standard with a 30-Day warranty.
+                                                    </li>
+                                                    <li>
+                                                        Add a Square Trade warranty to your purchase at checkout
+                                                    </li>
+
                                                 </ul>
+                                                <img src={require('../../../public/assets/squareTrade.jpg')} alt='square trade warranty' className='warranty-img' />
                                             </TabPanel>
                                             <TabPanel>
                                                 <ul>
@@ -72,6 +77,15 @@ class ProductDetails extends Component {
                                                 </ul>
                                             </TabPanel>
                                         </Tabs>
+                                        {
+                                            id >= 1 && id <= 8 || id >= 16 && id <= 19? 
+                                                (<div className='upsell'>
+                                                    <Link to='/processors'>
+                                                        <img src={require('../../../public/assets/cpuUpsell.jpg')} alt=' ' className='upsell-img'/>
+                                                    </Link> 
+                                                </div>):('')
+
+                                        }
                                     </div>
                                 </div>
                                 
@@ -80,7 +94,7 @@ class ProductDetails extends Component {
                                     <Tabs >
                                         <TabList>
                                             <Tab>Recommended</Tab>
-                                            <Tab>Reviews</Tab>
+                                            
                                         </TabList>
                                         <TabPanel>
                                             <Carousel breakPoints={breakPoints}>
@@ -96,7 +110,7 @@ class ProductDetails extends Component {
                                                 
                                             </Carousel>
                                         </TabPanel>
-                                        <TabPanel></TabPanel>
+                                        
                                     </Tabs>
                                 </div>
                         </div>

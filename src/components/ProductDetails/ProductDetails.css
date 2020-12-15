@@ -118,6 +118,12 @@
     border-top: 2px solid linear-gradient(90deg, #6568f4,  #4ad9e4);
 }
 
+.warranty-img{
+  width: 100%;
+  margin: 1rem;
+  cursor: pointer;
+}
+
 .recommended-review-wrapper{
   width: 75%;
   height: 650px;

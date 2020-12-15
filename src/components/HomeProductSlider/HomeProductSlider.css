@@ -1,0 +1,43 @@
+.product-slider{
+    width: 75%;
+    margin: 1rem auto;
+}
+
+.product-slider-heading{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.category-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.category-wrapper a{
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.category-img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.category-name{
+    height: 20%;
+    font-weight: 600;
+    color: #1E1E1E;
+    text-align: center;
+}
+
+@media (max-width: 960px){
+    .product-slider{
+        width: 100%;
+    }
+    .category-wrapper{
+        width: 50%;
+    }
+}
