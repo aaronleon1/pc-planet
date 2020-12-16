@@ -37,6 +37,8 @@
     }
     .limited-deal-img{
         object-fit: contain;
-        margin: 0 auto;
+        width: 90%;
+        height: 90%;
+        margin: auto;
     }
 }
