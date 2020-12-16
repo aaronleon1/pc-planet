@@ -48,7 +48,7 @@ const NavigationItems = [
     },
     {
         title: 'Cases',
-        path: '/cases',
+        path: '/computer-cases',
         cName: 'dropdown-link'
     },
     {
