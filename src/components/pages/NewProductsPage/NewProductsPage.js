@@ -18,7 +18,7 @@ function NewProductsPage() {
                 </div>
                 <div className='card'>
                     <Link to='graphics-cards' >
-                        <img src={require('../../../../public/assets/videocards.jpg')} alt='' className='card-img'/>
+                        <img src={require('../../../../public/assets/videocards.jpg')} alt='graphics cards' className='card-img'/>
                         
                     </Link>
                     <p className='card-text'>
@@ -27,7 +27,7 @@ function NewProductsPage() {
                 </div>
                 <div className='card'>
                     <Link to='ram'>
-                        <img src={require('../../../../public/assets/ramModules.jpg')} alt='' className='card-img'/>
+                        <img src={require('../../../../public/assets/ramModules.jpg')} alt='memory' className='card-img'/>
                         
                     </Link>  
                     <p className='card-text'>
@@ -36,7 +36,7 @@ function NewProductsPage() {
                 </div>
                 <div className='card'>
                     <Link to='motherboards'>
-                        <img src={require('../../../../public/assets/motherboards.jpg')} alt='' className='card-img'/>
+                        <img src={require('../../../../public/assets/motherboards.jpg')} alt='motherboards' className='card-img'/>
                        
                     </Link> 
                     <p className='card-text'>
@@ -44,8 +44,8 @@ function NewProductsPage() {
                     </p> 
                 </div>
                 <div className='card'>
-                    <Link to='#'>
-                        <img src={require('../../../../public/assets/monitors.jpg')} alt='' className='card-img'/>
+                    <Link to='monitors'>
+                        <img src={require('../../../../public/assets/monitors.jpg')} alt='monitors' className='card-img'/>
                         
                     </Link>
                     <p className='card-text'>
@@ -54,7 +54,7 @@ function NewProductsPage() {
                 </div>
                 <div className='card'>
                     <Link to='/ssds'>
-                        <img src={require('../../../../public/assets/ssds.jpg')} alt='' className='card-img'/>
+                        <img src={require('../../../../public/assets/ssds.jpg')} alt='hard drives and solid state drives' className='card-img'/>
                         
                     </Link>
                     <p className='card-text'>
@@ -62,8 +62,8 @@ function NewProductsPage() {
                         </p>  
                 </div>
                 <div className='card'>
-                    <Link to='#'>
-                        <img src={require('../../../../public/assets/coolers.jpg')} alt='' className='card-img'/>
+                    <Link to='coolers'>
+                        <img src={require('../../../../public/assets/coolers.jpg')} alt='coolers' className='card-img'/>
                         
                     </Link>
                     <p className='card-text'>
@@ -71,8 +71,8 @@ function NewProductsPage() {
                         </p>  
                 </div>
                 <div className='card'>
-                    <Link to='#'>
-                        <img src={require('../../../../public/assets/routers.jpg')} alt='' className='card-img'/>
+                    <Link to='/routers'>
+                        <img src={require('../../../../public/assets/routers.jpg')} alt='routers' className='card-img'/>
                         
                     </Link>  
                     <p className='card-text'>
@@ -80,8 +80,8 @@ function NewProductsPage() {
                         </p>
                 </div>
                 <div className='card'>
-                    <Link to='#'>
-                        <img src={require('../../../../public/assets/powerSupplys.jpg')} alt='' className='card-img'/>
+                    <Link to='/power-supplies'>
+                        <img src={require('../../../../public/assets/powerSupplys.jpg')} alt='power supplies' className='card-img'/>
                         
                     </Link>
                     <p className='card-text'>
@@ -90,7 +90,7 @@ function NewProductsPage() {
                 </div>
                 <div className='card'>
                     <Link to='/computer-cases'>
-                        <img src={require('../../../../public/assets/cases.jpg')} alt='' className='card-img'/>
+                        <img src={require('../../../../public/assets/cases.jpg')} alt='cases' className='card-img'/>
                         
                     </Link> 
                     <p className='card-text'>
@@ -98,8 +98,8 @@ function NewProductsPage() {
                         </p> 
                 </div>
                 <div className='card'>
-                    <Link to='#'>
-                        <img src={require('../../../../public/assets/desktops.jpg')} alt='' className='card-img'/>
+                    <Link to='/desktops'>
+                        <img src={require('../../../../public/assets/desktops.jpg')} alt='desktops' className='card-img'/>
                         
                     </Link>
                     <p className='card-text'>
@@ -108,7 +108,7 @@ function NewProductsPage() {
                 </div>
                 <div className='card'>
                     <Link to='/laptops'>
-                        <img src={require('../../../../public/assets/laptops.jpg')} alt='' className='card-img'/>
+                        <img src={require('../../../../public/assets/laptops.jpg')} alt='laptops' className='card-img'/>
                         
                     </Link>
                     <p className='card-text'>

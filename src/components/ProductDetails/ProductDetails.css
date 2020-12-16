@@ -88,24 +88,31 @@
 
 
 .add-to-cart{
-    height: 50px;
-    width: 20%;
-    background: linear-gradient(90deg, #6568f4,  #4ad9e4);
-    background-color: linear-gradient(90deg, #6568f4,  #4ad9e4);
-    color: white;
-    outline: none;
-    border: none;
-    cursor: pointer;
+  display: block;
+    
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background: linear-gradient(to right, #45a29e 50%, #0b0c10 50% );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .2s ease-out;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 
 
 .add-to-cart:hover{
-    background-color: #4BB543;
-    transform: scale(1.05)
+  background-position: left bottom;
+  cursor: pointer;
 }
 
 .back-btn, .add-to-cart{
-    padding: 1rem 0;
+    padding: 1rem;
     
 }
 

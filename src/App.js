@@ -15,6 +15,11 @@ import Motherboards from './components/pages/Motherboards/Motherboards'
 import SSDs from './components/pages/SSDs/SSDs'
 import Laptops from './components/pages/Laptops/Laptops'
 import ProductDetails from './components/ProductDetails/ProductDetails'
+import PowerSupplies from './components/pages/PowerSupplies/PowerSupplies'
+import Desktops from './components/pages/Desktops/Desktops'
+import Monitors from './components/pages/Monitors/Monitors'
+import Routers from './components/pages/Routers/Routers'
+import Coolers from './components/pages/Coolers/Coolers'
 import Modal from './components/UI/Modal/Modal'
 import Cart from './components/pages/Cart/Cart'
 import Default from './components/pages/Default'
@@ -38,6 +43,11 @@ class App extends Component {
               <Route path='/motherboards' component={Motherboards} />
               <Route path='/ssds' component={SSDs} />
               <Route path='/laptops' component={Laptops} />
+              <Route path='/power-supplies' component={PowerSupplies} />
+              <Route path='/monitors' component={Monitors} />
+              <Route path='/desktops' component={Desktops} />
+              <Route path='/routers' component={Routers} />
+              <Route path='/coolers' component={Coolers} />
               <Route path='/cart'  component={Cart} />
               <Route path='/details'  component={ProductDetails} />
               <Route component={Default} />
