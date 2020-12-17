@@ -13,11 +13,12 @@ class Modal extends Component {
                     if(!modalOpen){
                         return null
                     }
-                    else{
+                    else{ 
                         return(
                             <div className='modal-container'>
                                 <div className='modal-inner'>
                                     <h3>Added to Cart</h3>
+                                    
                                     <img src={productImage} className='modal-image' alt={productName} />
                                     <h4>{productName}</h4>
                                     <h4>Price: ${productPrice}</h4>

@@ -35,9 +35,7 @@ class ProductProvider extends Component {
         let data = localStorage.getItem('myProduct');
         data = JSON.parse(data);
         this.setProducts();
-        this.setState(()=>{
-            return{detailProduct: data}
-        })
+        this.setState({detailProduct: data})
     }
     setProducts = () => {
         let tempProducts = []
@@ -47,9 +45,7 @@ class ProductProvider extends Component {
             tempProducts = [...tempProducts, singleProduct]
             
         })
-        this.setState(()=>{
-            return{products: tempProducts, recommendedProducts: tempProducts}
-        })
+        this.setState({products: tempProducts, recommendedProducts: tempProducts})
     }
 
     getProductID = (id) => {
@@ -60,10 +56,7 @@ class ProductProvider extends Component {
     }
     handleDetail = (id) => {
         const product = this.getProductID(id);
-        this.setState(() => {
-            
-            return {detailProduct: product}
-        })
+        this.setState({detailProduct: product})
         
     }
 
@@ -83,15 +76,11 @@ class ProductProvider extends Component {
 
     openModal = (id) => {
         const product = this.getProductID(id)
-        this.setState(() => {
-            return {modalProduct: product, modalOpen: true}
-        })
+        this.setState({modalProduct: product, modalOpen: true})
     }
 
     closeModal = () =>{
-        this.setState(() =>{
-            return {modalOpen: false}
-        })
+        this.setState({modalOpen: false})
     }
 
     increment = (id) => {
