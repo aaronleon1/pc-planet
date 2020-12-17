@@ -28,33 +28,37 @@
 }
 
 .modal-image {
-    max-width: 100%;
+    max-width: 100%; 
     max-height: 65%;
 }
 
 .modal-continue, .modal-cart{
-    padding: 16px;
-    border-radius: 10px;
-    margin-right: 0.5rem;
+    padding: 16px 8px;
+    margin-left: 8px;
+    border: none;
     outline: none;
-    border: 2px solid white;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background: linear-gradient(to right, #45a29e 50%, #1E1E1E 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
     cursor: pointer;
-    background: white;
-    color: #7577fa;
-    font-family: 'Open Sans', serif;
     
 }
 
 
 .modal-continue:hover, .modal-cart:hover{
-    background: #7577fa;
-    color: white;
-    border: 2px solid  #4ad9e4;
+    background-position: left bottom;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 960px){
     .modal-inner{
         width: 80%;
-        height: 80%
+        height: 70%
     }
 }
