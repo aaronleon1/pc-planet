@@ -13,10 +13,11 @@
 .modal-inner {
     width: 30%;
     height: 80%;
-    background: #EEEEEE;
+    background: #fff;
     padding: 16px;
     text-align: center;
     font-family: 'Open Sans', serif;
+    
     
 }
 
