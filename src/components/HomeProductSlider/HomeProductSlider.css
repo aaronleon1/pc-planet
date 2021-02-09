@@ -1,6 +1,7 @@
 .product-slider{
     width: 75%;
     margin: 1rem auto;
+    max-width: 1600px;
 }
 
 .product-slider-heading{

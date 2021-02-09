@@ -4,6 +4,7 @@
     background-image: url(../../../public/assets/bannerBackground.jpg);
     background-repeat: repeat-x;
     display: block;
+    max-width: 1600px;
 }
 
 .bestseller-img{

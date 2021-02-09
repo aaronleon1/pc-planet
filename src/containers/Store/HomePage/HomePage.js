@@ -15,7 +15,7 @@ class HomePage extends Component {
         
         return(
             <div className='home-page'>
-                <HeroSlider />
+                <HeroSlider /> 
                 <TodaysDeal />
                 <HomeProductSlider />
                 <BestSellerBanner />

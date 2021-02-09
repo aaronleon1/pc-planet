@@ -1,12 +1,22 @@
+.product-wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: block;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 .products-wrapper{
     width: 75%;
     height: 100%;
     padding: 0;
     display: block;
+    max-width: 1600px;
 }
 
 .product-head{
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     text-align: left;
     background: transparent;
@@ -21,7 +31,7 @@
 }
 
 .product-banner{
-    width: 75%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 }

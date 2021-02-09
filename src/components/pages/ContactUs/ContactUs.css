@@ -1,7 +1,8 @@
 .form-container{
   width: 80%;
   height: 60vh;
-  margin: 60px auto
+  margin: 60px auto;
+  max-width: 1600px;
 }
 .form-heading{
   width: 100%;

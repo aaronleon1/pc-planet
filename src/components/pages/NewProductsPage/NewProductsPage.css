@@ -2,6 +2,7 @@
     width: 60%;
     height: 100%;
     margin: 20px auto;
+    max-width: 1600px;
 }
 
 .newPage-wrapper{

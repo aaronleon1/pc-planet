@@ -2,6 +2,7 @@
     width: 75%;
     margin: 0 auto;
     height: 100%;
+    max-width: 1600px;
 }
 
 .home-cards-wrapper{

@@ -31,7 +31,7 @@ class App extends Component {
     return (
           <>
             <Navbar />
-            <Switch>
+            <Switch >
               <Route path='/' exact component={HomePage} />
               <Route path='/products'  component={Products} />
               <Route path='/contact-us'  component={ContactUs} />

@@ -46,19 +46,22 @@
 .detail-wrapper { 
     height: 60%;
     width: 100%;
+    margin: 0 auto;
     animation: fadeIn ease 1s;
     -webkit-animation: fadeIn ease 1s;
     -moz-animation: fadeIn ease 1s;
     -o-animation: fadeIn ease 1s;
     -ms-animation: fadeIn ease 1s;
+    max-width: 1600px;
 }
 
 
 .product-detail-wrapper {
-    width: 90%;
+    width: 100%;
     margin: 1rem auto;
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .prod-image { 
