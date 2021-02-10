@@ -11,6 +11,7 @@
     margin: 0 auto;
     flex-wrap: wrap;
     color: #66FCF1; 
+    max-width: 1600px;
 }
 
 .newsletter {

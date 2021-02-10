@@ -40,12 +40,6 @@ const footer = () => {
                     <li><p>Returns & Exchanges</p></li>
                     <li><p>Customer Service</p></li>
                 </ul>
-                <ul className='footer-list menu-footer'>
-                    <h3>Menu</h3>
-                    <li><p>Home</p></li>
-                    <li><p>Products</p></li>
-                    <li><p>Contact Us</p></li>
-                </ul>
             </div>
         </div>
     )
