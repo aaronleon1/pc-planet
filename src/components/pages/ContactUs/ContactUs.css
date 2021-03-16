@@ -1,22 +1,25 @@
 .form-container{
-  width: 80%;
+  width: 75%;
   height: 60vh;
   margin: 60px auto;
   max-width: 1600px;
 }
 .form-heading{
   width: 100%;
+  text-align: center;
 
 }
 .form-body{
   width: 100%;
   display: flex;
+  text-align: center;
 }
 
 .form-body form{
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 
 .top-inputs{
@@ -33,7 +36,7 @@
   .form-submit{ 
     display: block; 
     height: 80px; 
-    width: 100%;
+    width: 50%;
     outline: none;
     border: none;
     color: #fff;
@@ -45,6 +48,7 @@
     background-position: right bottom;
     transition: all .5s ease-out;
     cursor: pointer;
+    
   }
   .form-submit:hover{
     background-position: left bottom;
@@ -53,6 +57,7 @@
 
   @media (max-width: 960px){
       .form-container{
+        width: 95%;
         margin: 32px auto;
         height: 70%;
         
@@ -62,12 +67,21 @@
           flex-direction: column;
       }
 
+      .top-inputs{
+        width: 80%;
+      }
+
       .form-heading h2{
         padding-top: 0;
       }
       
       .bottom-input{
         height: 80px;
+        width: 80%;
+      }
+
+      .form-submit{
+        width: 80%;
       }
   }
   

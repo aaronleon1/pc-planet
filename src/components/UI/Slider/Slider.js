@@ -12,9 +12,7 @@ import i5 from '../../../../public/assets/i5.jpg'
 function HeroSlider() { 
 
     let sliderImgs = [
-        <Imgs src={i2}/>, 
         <Imgs src={i1}/>, 
-        <Imgs src={i3}/>, 
         <Imgs src={i4}/>,
         <Imgs src={i5}/>
         
