@@ -1,11 +1,11 @@
-.img-slide{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
+.img-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
-@media screen and (max-width: 960px){
-    .img-slide{
-        object-fit: cover;
-    }
+@media screen and (max-width: 960px) {
+  .img-slide {
+    object-fit: cover;
+  }
 }

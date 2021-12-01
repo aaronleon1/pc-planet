@@ -1,87 +1,80 @@
-.form-container{
+.form-container {
   width: 75%;
   height: 60vh;
   margin: 60px auto;
   max-width: 1600px;
 }
-.form-heading{
+.form-heading {
   width: 100%;
   text-align: center;
-
 }
-.form-body{
+.form-body {
   width: 100%;
   display: flex;
   text-align: center;
 }
 
-.form-body form{
+.form-body form {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
 
-.top-inputs{
+.top-inputs {
   width: 50%;
 }
-.bottom-input{
+.bottom-input {
   width: 100%;
   height: 150px;
 }
 
+.form-submit {
+  display: block;
+  height: 80px;
+  width: 50%;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  background: linear-gradient(to right, #45a29e 50%, #1e1e1e 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.form-submit:hover {
+  background-position: left bottom;
+  cursor: pointer;
+}
 
-  
-  
-  .form-submit{ 
-    display: block; 
-    height: 80px; 
-    width: 50%;
-    outline: none;
-    border: none;
-    color: #fff;
-    font-weight: 400;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    background: linear-gradient(to right, #45a29e 50%, #1E1E1E 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .5s ease-out;
-    cursor: pointer;
-    
+@media (max-width: 960px) {
+  .form-container {
+    width: 95%;
+    margin: 32px auto;
+    height: 70%;
   }
-  .form-submit:hover{
-    background-position: left bottom;
-    cursor: pointer;
+  .form-container form {
+    display: flex;
+    flex-direction: column;
   }
 
-  @media (max-width: 960px){
-      .form-container{
-        width: 95%;
-        margin: 32px auto;
-        height: 70%;
-        
-      }
-      .form-container form{
-          display: flex;
-          flex-direction: column;
-      }
-
-      .top-inputs{
-        width: 80%;
-      }
-
-      .form-heading h2{
-        padding-top: 0;
-      }
-      
-      .bottom-input{
-        height: 80px;
-        width: 80%;
-      }
-
-      .form-submit{
-        width: 80%;
-      }
+  .top-inputs {
+    width: 80%;
   }
-  
+
+  .form-heading h2 {
+    padding-top: 0;
+  }
+
+  .bottom-input {
+    height: 80px;
+    width: 80%;
+  }
+
+  .form-submit {
+    width: 80%;
+  }
+}

@@ -1,11 +1,11 @@
-.cart-heading{
-    text-align: center;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    font-weight: 400;
+.cart-heading {
+  text-align: center;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
-.empty-cart{
-    text-align: center;
-    height: 90vh;
-    margin: auto;
+.empty-cart {
+  text-align: center;
+  height: 90vh;
+  margin: auto;
 }

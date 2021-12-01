@@ -1,29 +1,28 @@
-.cartTotals-container{
-    text-align: left;
-    max-width: 20%;
-    font-size: 20px;
-    margin: 1rem 0 1rem 15%;
+.cartTotals-container {
+  text-align: left;
+  max-width: 20%;
+  font-size: 20px;
+  margin: 1rem 0 1rem 15%;
 }
 
-.subtotal-container, .tax-container, .total-container{
-    text-align: left;
-    font-weight: 400;
+.subtotal-container,
+.tax-container,
+.total-container {
+  text-align: left;
+  font-weight: 400;
 }
 
-.tax-container{
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
+.tax-container {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
 }
-
 
 @media (max-width: 960px) {
-    .cartTotals-container{
-        display: flex;
-        flex-direction: column;
-        
-        text-align: left;
-        width: 80%
-    }
+  .cartTotals-container {
+    display: flex;
+    flex-direction: column;
 
-    
+    text-align: left;
+    width: 80%;
+  }
 }

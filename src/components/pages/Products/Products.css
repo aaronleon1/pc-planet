@@ -1,81 +1,77 @@
-.product-wrapper{
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    display: block;
-    max-width: 1600px;
-    margin: 0 auto;
+.product-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: block;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-.products-wrapper{
-    width: 75%;
-    height: 100%;
-    padding: 0;
-    display: block;
-    max-width: 1600px;
+.products-wrapper {
+  width: 75%;
+  height: 100%;
+  padding: 0;
+  display: block;
+  max-width: 1600px;
 }
 
-.product-head{
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-    background: transparent;
-    border-bottom: 1px solid #ccc;
-    padding: 0;
-   
+.product-head {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  padding: 0;
 }
-.product-head h1{
-    margin: 0;
-    padding: 1rem;
-    color:  #1f2833; 
+.product-head h1 {
+  margin: 0;
+  padding: 1rem;
+  color: #1f2833;
 }
 
-.product-banner{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+.product-banner {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
-.product-banner img{
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: fill;
+.product-banner img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
 }
 
 .product-categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px auto;
-    width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  width: 80%;
 }
 
-
-
-.card-links button{
-    padding: 16px;
-    background: linear-gradient(45deg, #6568f4,  #4ad9e4);
-    cursor: pointer;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 14px;
+.card-links button {
+  padding: 16px;
+  background: linear-gradient(45deg, #6568f4, #4ad9e4);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
 }
 
-@media (max-width: 960px){
-    .product-banner{
-        width: 100%;
-        height: 14vh;
-        margin: 0 auto;
-    }
-    .product-banner img{
-        object-fit: fill;
-        max-width: 100%;
-        height: 100%;
-        margin: 0 auto;
-    }
-    .product-head{
-        width: 100%;
-    }
-    
+@media (max-width: 960px) {
+  .product-banner {
+    width: 100%;
+    height: 14vh;
+    margin: 0 auto;
+  }
+  .product-banner img {
+    object-fit: fill;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .product-head {
+    width: 100%;
+  }
 }

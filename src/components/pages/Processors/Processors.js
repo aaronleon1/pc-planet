@@ -1,42 +1,39 @@
-import React, {Component} from 'react';
-import '../Products/Products.css'
-import {ProductConsumer} from '../../context'
-import ProductCard from '../../ProductCard/ProductCard'
-
+import React, { Component } from "react";
+import "../Products/Products.css";
+import { ProductConsumer } from "../../context";
+import ProductCard from "../../ProductCard/ProductCard";
 
 class Processors extends Component {
-    componentDidMount() {
-        window.scrollTo(0, 0)
-    }
-    render() {
-        
-
-        return(
-            <div className='product-wrapper'> 
-                <div className='product-banner'>
-                    <img src={require('../../../../public/assets/cpuBanner.jpg')} alt='catergory banner' />
-                </div>
-                <div className='product-head'>
-                    <h1>Processors</h1>
-                </div>
-                <div className='product-cards-wrapper'>
-                <ProductConsumer>
-                    {value =>{
-                       return value.products.slice(8,16).map( prod => {
-                           return <ProductCard key={prod.id}
-                            prod={prod}  
-                            />
-                       })
-                    }}
-                </ProductConsumer>
-                </div>
-                
-            </div>  
-        )
-    }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  render() {
+    return (
+      <div className="product-wrapper">
+        <div className="product-banner">
+          <img
+            src={require("../../../../public/assets/cpuBanner.jpg")}
+            alt="catergory banner"
+          />
+        </div>
+        <div className="product-head">
+          <h1>Processors</h1>
+        </div>
+        <div className="product-cards-wrapper">
+          <ProductConsumer>
+            {(value) => {
+              return value.products.slice(8, 16).map((prod) => {
+                return <ProductCard key={prod.id} prod={prod} />;
+              });
+            }}
+          </ProductConsumer>
+        </div>
+      </div>
+    );
+  }
 }
 
-    export default Processors
+export default Processors;
 /*
 const Processors = () => {
     return(

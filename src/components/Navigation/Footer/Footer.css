@@ -1,90 +1,87 @@
 .footer-wrapper {
-    background: #0b0c10;
-    width: 100%;
-    display: block;
-    margin-top: auto;
+  background: #0b0c10;
+  width: 100%;
+  display: block;
+  margin-top: auto;
 }
 
 .footer {
-    display: flex;
-    justify-content: left;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    color: #66FCF1; 
-    max-width: 1600px;
+  display: flex;
+  justify-content: left;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  color: #66fcf1;
+  max-width: 1600px;
 }
 
 .newsletter {
-    margin: 2rem 0;
-    padding: 5px 0;
-    
+  margin: 2rem 0;
+  padding: 5px 0;
 }
-.newsletter h3{
-    font-weight: 400;
-}
-
-.newsletter input{
-    border-radius: 5px 0 0 5px;
-    padding: 16px;
-    outline: none;
-    border: none;
-}
-.newsletter-btn{
-    border-radius: 0 5px 5px 0;
-    padding: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
+.newsletter h3 {
+  font-weight: 400;
 }
 
+.newsletter input {
+  border-radius: 5px 0 0 5px;
+  padding: 16px;
+  outline: none;
+  border: none;
+}
+.newsletter-btn {
+  border-radius: 0 5px 5px 0;
+  padding: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
-ul h3{
-    font-weight: 400;
+ul h3 {
+  font-weight: 400;
 }
 
 li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.footer-list{
-    margin: 30px 2rem;
-    padding: 1rem;
-    font-size: 20px;
+.footer-list {
+  margin: 30px 2rem;
+  padding: 1rem;
+  font-size: 20px;
 }
 .social-links {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .fab {
-    font-size: 28px;
-    margin: 5px;
+  font-size: 28px;
+  margin: 5px;
 }
 
-@media (max-width: 960px){
-    
-    .footer-wrapper{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: block;
-    }
-    .footer {
-        display: block;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .newsletter{
-        margin: 1rem 0 1rem 40px
-    }
-    .footer-list {
-        margin: 20px 60px 0 60px;
-    }
-    .social-links {
-        display: inline;
-    }
+@media (max-width: 960px) {
+  .footer-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .footer {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .newsletter {
+    margin: 1rem 0 1rem 40px;
+  }
+  .footer-list {
+    margin: 20px 60px 0 60px;
+  }
+  .social-links {
+    display: inline;
+  }
 }

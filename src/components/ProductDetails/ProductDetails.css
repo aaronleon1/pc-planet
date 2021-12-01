@@ -1,145 +1,138 @@
 @keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  0% {
+    opacity: 0;
   }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-  }
-  }
-
-.detail-wrapper { 
-    height: 60%;
-    width: 100%;
-    margin: 0 auto;
-    animation: fadeIn ease 1s;
-    -webkit-animation: fadeIn ease 1s;
-    -moz-animation: fadeIn ease 1s;
-    -o-animation: fadeIn ease 1s;
-    -ms-animation: fadeIn ease 1s;
-    max-width: 1600px;
 }
 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.detail-wrapper {
+  height: 60%;
+  width: 100%;
+  margin: 0 auto;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+  max-width: 1600px;
+}
 
 .product-detail-wrapper {
-    width: 100%;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-evenly;
-    
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.prod-image { 
-    height: 550px;
-    width: auto;
+.prod-image {
+  height: 550px;
+  width: auto;
 }
 
-.prod-image img{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
+.prod-image img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
 .prod-details {
-    width: 40%;
-    min-height: 100%;
-    text-align: left;
-    
-    
+  width: 40%;
+  min-height: 100%;
+  text-align: left;
 }
-.prod-details h1, .prod-details h2{
-    
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    font-weight: 300;
+.prod-details h1,
+.prod-details h2 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
-
-
-.add-to-cart{
+.add-to-cart {
   display: block;
-    
+
   outline: none;
   border: none;
   color: #fff;
   font-weight: 400;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 16px;
-  background: linear-gradient(to right, #45a29e 50%, #0b0c10 50% );
+  background: linear-gradient(to right, #45a29e 50%, #0b0c10 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
 }
 
-
-.add-to-cart:hover{
+.add-to-cart:hover {
   background-position: left bottom;
   cursor: pointer;
 }
 
-.back-btn, .add-to-cart{
-    padding: 1rem;
-    
+.back-btn,
+.add-to-cart {
+  padding: 1rem;
 }
 
-.prod-specs {  
-    margin: 2rem 0;
-    width: 70%;
-    text-align: left;
-    padding: 0.5rem 0;
-    white-space: pre-wrap;
-    border-top: 2px solid linear-gradient(90deg, #6568f4,  #4ad9e4);
+.prod-specs {
+  margin: 2rem 0;
+  width: 70%;
+  text-align: left;
+  padding: 0.5rem 0;
+  white-space: pre-wrap;
+  border-top: 2px solid linear-gradient(90deg, #6568f4, #4ad9e4);
 }
 
-.warranty-img{
+.warranty-img {
   width: 100%;
   margin: 1rem;
   cursor: pointer;
 }
 
-.recommended-review-wrapper{
+.recommended-review-wrapper {
   width: 75%;
   height: 650px;
   margin: 0 auto 3rem auto;
 }
-.rec-card-wrapper{
+.rec-card-wrapper {
   width: 100%;
   height: 500px;
   margin: 1rem;
@@ -154,12 +147,11 @@
   text-align: center;
 }
 
-.rec-product a{
+.rec-product a {
   margin: 0;
   padding: 4px;
   width: 100%;
   height: 40%;
-  
 }
 .rec-product-image {
   max-height: 100%;
@@ -168,17 +160,16 @@
   margin: 0;
 }
 
-.rec-product-card-details{
+.rec-product-card-details {
   width: 100%;
   text-align: left;
-  height: 60%
+  height: 60%;
 }
 
-.rec-product-card-heading{
-  display: flex; 
-  margin: 8px 0; 
+.rec-product-card-heading {
+  display: flex;
+  margin: 8px 0;
   max-width: 100%;
-  
 }
 
 .rec-product-name {
@@ -187,18 +178,18 @@
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
-.rec-logo-image{
+.rec-logo-image {
   object-fit: contain;
-  height:60px;
-  width:90px;
+  height: 60px;
+  width: 90px;
 }
-.rec-product-price, .rec-product-price p{
+.rec-product-price,
+.rec-product-price p {
   font-size: 18px;
   font-weight: 500;
-  
 }
 
-.rec-price-view-details{
+.rec-price-view-details {
   display: flex;
   flex-direction: column;
 }
@@ -208,16 +199,15 @@
   border: none;
   color: #fff;
   font-weight: 400;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 16px;
-  background: linear-gradient(to right, #45a29e 50%, #0b0c10 50% );
+  background: linear-gradient(to right, #45a29e 50%, #0b0c10 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  
 }
 
 .view-details:hover {
@@ -225,92 +215,83 @@
   cursor: pointer;
 }
 
-
-.rec-fa-star{
+.rec-fa-star {
   font-size: 12px;
-  color: #FFD700;
+  color: #ffd700;
 }
 
-
 @media (max-width: 960px) {
-    .product-detail-wrapper{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 90%;
-        margin-bottom: 1rem;
-    }
-    .detail-wrapper{
-        height: 100%;
-    }
+  .product-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 1rem;
+  }
+  .detail-wrapper {
+    height: 100%;
+  }
 
-    .prod-details, .prod-image {
-        width: 90vw;
-        height: auto;
-        margin: 1rem auto;
+  .prod-details,
+  .prod-image {
+    width: 90vw;
+    height: auto;
+    margin: 1rem auto;
+  }
+  .add-to-cart {
+    width: 40%;
+    text-align: center;
+  }
+  .prod-specs {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+    height: auto;
+  }
+  .recommended-review-wrapper {
+    width: 100%;
 
-    }
-    .add-to-cart{
-        width: 40%;
-        text-align: center;
-    }
-    .prod-specs{
-        width: 100%;
-        margin: 1rem 0;
-        padding: 0;
-        height: auto;
-    }
-    .recommended-review-wrapper{
-      width: 100%;
-     
-      margin: 0;
-      padding: 0;
-    }
-    .rec-card-wrapper{
+    margin: 0;
+    padding: 0;
+  }
+  .rec-card-wrapper {
     width: 100%;
     height: 100%;
-      
   }
-  .rec-product-head{
-    width: 100%
+  .rec-product-head {
+    width: 100%;
   }
-  .rec-product{
+  .rec-product {
     width: 100%;
     height: 450px;
-      
   }
-  .rec-product a{
-      height: 100%;
-      width: 80%;
-      margin: 0 auto;
+  .rec-product a {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .rec-product-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+  }
+  .rec-product-card-details {
+    width: 100%;
+    text-align: left;
+  }
+  .rec-product-name {
+    width: 100%;
 
+    text-align: left;
   }
-  .rec-product-image{
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-      margin: 0;
-      padding: 0;
+  .rec-product-price {
+    font-size: 24px;
+    font-weight: 400;
   }
-  .rec-product-card-details{
-      width: 100%;
-      text-align: left;
+  .rec-price-view-details {
+    flex-direction: column;
+    width: 90%;
   }
-  .rec-product-name{
-      width: 100%;
-      
-      text-align: left;
-  }
-  .rec-product-price{
-      font-size: 24px;
-      font-weight: 400;
-  }
-  .rec-price-view-details{
-      flex-direction: column;
-      width: 90%;
-  }
-  
-
-
-
 }

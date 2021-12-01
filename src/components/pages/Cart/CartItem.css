@@ -1,79 +1,80 @@
-.item-row{
-    display: flex;
-    margin: 1rem auto;
-    background-color:	#ECECEC;
-    justify-content: space-evenly ;
-    border-radius: 16px;
-    align-items: center;
-    max-width: 70%;
-    
+.item-row {
+  display: flex;
+  margin: 1rem auto;
+  background-color: #ececec;
+  justify-content: space-evenly;
+  border-radius: 16px;
+  align-items: center;
+  max-width: 70%;
 }
 
-.item-image, .item-name, .item-price, .item-remove, .item-total{
-    margin: 2rem 1rem;
-    font-size: 18px;
-    font-weight: 400; 
+.item-image,
+.item-name,
+.item-price,
+.item-remove,
+.item-total {
+  margin: 2rem 1rem;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.item-name{
-    width: 8rem;
-    text-align: center;
-    
+.item-name {
+  width: 8rem;
+  text-align: center;
 }
 
-.item-remove, .item-total{
-    padding: 1rem;
+.item-remove,
+.item-total {
+  padding: 1rem;
 }
 
-
-
-.inner-cart-btns{
-    margin:2rem 0.2rem 2rem 2rem;
-    width: 145px;
+.inner-cart-btns {
+  margin: 2rem 0.2rem 2rem 2rem;
+  width: 145px;
 }
 
-
-.decrement-btn, .increment-btn{
-    background: transparent;
-    text-transform: capitalize;
-    font-size: 0.8rem;
-    color: #292f33;
-    border: 0.1rem solid #292f33;
-    padding: 8px 10px;
-    cursor: pointer
+.decrement-btn,
+.increment-btn {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: #292f33;
+  border: 0.1rem solid #292f33;
+  padding: 8px 10px;
+  cursor: pointer;
 }
-.decrement-btn, .increment-btn, .active-count{
-    margin: 0.5rem;
+.decrement-btn,
+.increment-btn,
+.active-count {
+  margin: 0.5rem;
 }
 
-
-
-
-.fa-times{
-    color: black;
-    font-size: 1.8rem;
-    cursor: pointer;
+.fa-times {
+  color: black;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
-    .item-row{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 1rem auto
-        
-    }
-    .item-remove{
-        position: absolute;
-        top: 1%;
-        right: 4%;
-    }
-    .item-image, .item-name, .item-price, .item-remove, .item-total{
-        margin: 10px 0;
-    }
+  .item-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .item-remove {
+    position: absolute;
+    top: 1%;
+    right: 4%;
+  }
+  .item-image,
+  .item-name,
+  .item-price,
+  .item-remove,
+  .item-total {
+    margin: 10px 0;
+  }
 }
-
-
