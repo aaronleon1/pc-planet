@@ -1,4 +1,4 @@
-## PC Planet - A React ECommerce SPA
+## PC Planet - A React ECommerce SPA (Currently being refactored to GatsbyJS/Contentful)
 
 The project features: 
 - React Router 
@@ -15,8 +15,7 @@ Live version available at: www.thepcplanet.us
 ### WARNING ***PLEASE READ***
 
 -Unless you are using a Paypal sandbox account with test/dummy funds <br />
-Please. <br />
-Please. <br />
+
 PLEASE DO NOT purchase the items from this app. No items will be delivered. PC Planet is simply a project to display my understanding of ReactJS.
 
 
@@ -27,5 +26,5 @@ PLEASE DO NOT purchase the items from this app. No items will be delivered. PC P
 
 ### Current Focus
 
-- Filling a Paypal sandbox account with test/dummy funds to test post-purchase screen
+- Styling and overall structure needs to be improved - a refactor is underway.
 
